@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  swim-broker: 
+    container_name: swim-broker
+    image: lagarnicachavira/swim-broker:latest
+    restart: always
+    environment:
+      - SWIMDBUSER=user
+      - SWIMDBPASSWORD=password
+      - SWIMDBHOST=localhost
+      - SWIMDBNAME=modeldb
+      - SWIMDBPORT=27017
+      - SWIMDBAUTH=admin
+      - WORKFLOWDBUSER=user
+      - WORKFLOWDBPASSWORD=password
+      - WORKFLOWDBHOST=localhost
+      - WORKFLOWDBNAME=workflow
+      - WORKFLOWAUTHSOURCE=admin
+      - AUTHDBDRIVER=mysql
+      - AUTHDBHOST=localhost
+      - AUTHDBPORT=3306
+      - AUTHDBNAME=swim-log
+      - AUTHDBUSER=user
+      - AUTHDBPASSWORD=password
+      - USERDBDRIVER=mysql
+      - USERDBHOST=localhost
+      - USERDBPORT=3306
+      - USERDBNAME=userdb
+      - USERDBUSER=user
+      - USERDBPASSWORD=password
+      - COMPOSERURL=http://locahost:8091/compose
+      - SWIMMERGEURL=http://localhost:5021/swim-merge/postprocess
+      - SERIALIZERURL=http://localhost:5004/workflow-cwl/workflow/serialize/
+      - RUNNERURL=http://localhost.5:5004/workflow-cwl/workflow/execute/
+    ports:
+      # <host port> : <application port>
+      - 9350:9350
+      - 9351:9351
+    volumes:
+      - ./logs:/swim-broker/logs
+      - ./outputs:/swim-broker/outputs

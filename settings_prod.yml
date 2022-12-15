@@ -1,0 +1,84 @@
+# # Service Configuration
+server:
+   applicationConnectors:
+     - type: http
+       port: 9351   
+       acceptorThreads: 2
+       selectorThreads: 4
+   #health check and admin port
+   adminConnectors:
+     - type: http
+       port: 9350
+
+logging:
+  level: DEBUG
+  appenders:
+    # Log warnings and errors to file
+    - type: file
+      currentLogFilename: ./logs/swim-broker.log
+      threshold: WARN
+      queueSize: 512
+      discardingThreshold: 0
+      archive: true
+      archivedLogFilenamePattern: ./logs/swim-broker-%d.log
+      archivedFileCount: 5
+      timeZone: UTC
+      logFormat: "%-5p [%d{ISO8601,UTC}] %c: %m%n%rEx"
+      bufferSize: 8KiB
+      immediateFlush: true   
+    # log debug on console (testing only)
+    - type: console
+      threshold: ERROR
+      target: stdout
+
+# SWIM Model Database
+swimdbuser: ${SWIMDBUSER}
+swimdbpassword: ${SWIMDBPASSWORD}
+swimdbhost: ${SWIMDBHOST}
+swimdbname: ${SWIMDBNAME}
+swimdbport:  ${SWIMDBPORT:- 27017}
+swimdbauth: ${SWIMDBAUTH}  
+
+# Workflow Database
+workflowDBUser: ${WORKFLOWDBUSER}
+workflowDBPassword: ${WORKFLOWDBPASSWORD}
+workflowDBHost: ${WORKFLOWDBHOST}
+workflowDBName: ${WORKFLOWDBNAME}
+workflowDBPort: ${WORKFLOWDBPORT:- 27017}
+workflowAuthSource: ${WORKFLOWAUTHSOURCE}
+
+# Auth Key Database
+authDBDriver: ${AUTHDBDRIVER:- mysql}
+authDBHost: ${AUTHDBHOST}
+authDBPort: ${AUTHDBPORT:- 3306}
+authDBName: ${AUTHDBNAME}
+authDBUser: ${AUTHDBUSER}
+authDBPassword: ${AUTHDBPASSWORD}
+
+# User Database
+userDBDriver: ${USERDBDRIVER:- mysql}
+userDBHost: ${USERDBHOST}
+userDBPort: ${USERDBPORT:- 3306}
+userDBName: ${USERDBNAME}
+userDBUser: ${USERDBUSER}
+userDBPassword: ${USERDBPASSWORD}
+
+# Orchestration webservices
+composerURL: ${COMPOSERURL}
+swimMergeURL: ${SWIMMERGEURL}
+serializerURL: ${SERIALIZERURL}
+runnerURL: ${RUNNERURL}
+
+swagger:
+  contextRoot: /swim-broker
+  schemes: ['https']
+  resourcePackage: com.utep.ilink.swim.services.controller
+  title: SWIM Modeling Broker
+  version: 1.0
+  description: SWIM entrypoints for orchestration and execution of modeling workflows
+  termsOfServiceUrl: https://swim.cybershare.utep.edu/en/policy
+  licenseUrl: https://creativecommons.org/licenses/by-nc/4.0/
+  contactEmail: swim@utep.edu
+  enabled: false
+
+

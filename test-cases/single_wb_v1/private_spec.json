@@ -1,0 +1,3623 @@
+{
+    "id": "edd04bfb-039a-4cca-be97-08ab6b83fae1",
+    "name": "wb v1 test case",
+    "description": "Reservoir Operation: Default Scenario Climate: Intermediate Stress Climate Scenario Evaporation: Default Scenario ",
+    "status": "ready",
+    "isPublic": false,
+    "userid": null,
+    "modelSettings": [
+      {
+        "modelID": "5d76cc181328534d8cb7d17c"
+      },
+      {
+        "theme": "5e7d304666c63a55207b5bcd"
+      },
+      {
+        "theme": "5daa3eafdcb3d506e4b2160f"
+      },
+      {
+        "theme": "61b27bb33a006651d385c398"
+      }
+    ],
+    "modelSets": [],
+    "modelInputs": [
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "StartYear",
+        "definitionType": "user",
+        "maxValue": 2069,
+        "minValue": 2020,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "General",
+            "paramUnit": "year",
+            "paramLabel": "Starting Year",
+            "lang": "en-us",
+            "paramDescription": "Starting year of simulation run"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "año",
+            "paramLabel": "Año Inicial",
+            "lang": "es-mx",
+            "paramDescription": "Año Inicial de la ejecucion del modelo"
+          }
+        ],
+        "paramDefaultValue": 2020,
+        "paramValue": 2020
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EndYear",
+        "definitionType": "user",
+        "maxValue": 2070,
+        "minValue": 2030,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "General",
+            "paramUnit": "year",
+            "paramLabel": "Ending Year",
+            "lang": "en-us",
+            "paramDescription": "Ending year of simulation run"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "año",
+            "paramLabel": "Ultimo Año",
+            "lang": "es-mx",
+            "paramDescription": "Año final de la ejecucion del modelo"
+          }
+        ],
+        "paramDefaultValue": 2070,
+        "paramValue": 2070
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EBInitStorage",
+        "definitionType": "user",
+        "maxValue": 1990000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Initial EB Storage Volume",
+            "lang": "en-us",
+            "paramDescription": "Elephant Butte Storage on Starting Year"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Almacenamiento Inicial en presa del Elefante Butte ",
+            "lang": "es-mx",
+            "paramDescription": "Volumen inicial de agua en la presa del Elefante Butte"
+          }
+        ],
+        "paramDefaultValue": 415000,
+        "paramValue": 415000
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "CaballoInitStorage",
+        "definitionType": "user",
+        "maxValue": 343990,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Initial Caballo Storage Volume",
+            "lang": "en-us",
+            "paramDescription": "Caballo Reservoir Storage on Starting Year"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Almacenamiento Inicial en Presa Caballo",
+            "lang": "es-mx",
+            "paramDescription": "Volumen de agua almacenada en el año inicial de la simulacion"
+          }
+        ],
+        "paramDefaultValue": 57420,
+        "paramValue": 57420
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "Full_Allocation",
+        "definitionType": "scenario",
+        "maxValue": 790000,
+        "minValue": 0,
+        "paramDefaultSource": "Rio Grande Project Operating Agreement 2008",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "General",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Full Allocation",
+            "lang": "en-us",
+            "paramDescription": "Full allocation of water to be released from Caballo for downstream water users as defined by the Rio Grande Project Operating Agreement 2008"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Demanda Anual",
+            "lang": "es-mx",
+            "paramDescription": "Demanda completa de agua a ser liberada de la presa El Caballo para usuarios rio abajo, definido por el trataddo de operaciones del 2008."
+          }
+        ],
+        "paramDefaultValue": 790000,
+        "paramValue": 790000
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "PanCo",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": 0,
+        "paramDefaultSource": "Calibrated against historical storage records",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "General",
+            "paramUnit": "n/a",
+            "paramLabel": "Pan Evaporation Coefficient",
+            "lang": "en-us",
+            "paramDescription": "Rio Grande project surface storage pan evaporation coefficient"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "n/a",
+            "paramLabel": "Coeficiente de Evaporacion",
+            "lang": "es-mx",
+            "paramDescription": "Coeficiente de evaporacion en las reservas superficiales de agua"
+          }
+        ],
+        "paramDefaultValue": 0.7881,
+        "paramValue": 0.7881
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EBMin",
+        "definitionType": "user",
+        "maxValue": 1990000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "EB Minimum Storage",
+            "lang": "en-us",
+            "paramDescription": "Elephant Butte reservoir minimum storage volume"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Almacenamiento Minimo en Elefante Butte",
+            "lang": "es-mx",
+            "paramDescription": "Volumen de almacenamiento minimo en presa del Elefante Butte"
+          }
+        ],
+        "paramDefaultValue": 17300,
+        "paramValue": 17300
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EBMax",
+        "definitionType": "scenario",
+        "maxValue": 1990000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "EB Maximum Storage",
+            "lang": "en-us",
+            "paramDescription": "Elephant Butte Maximum storage volume"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Capacidad Maxima de Elefante Butte",
+            "lang": "es-mx",
+            "paramDescription": "Volumen maximo de agua que puede almacenar la presa del Elefante Butte"
+          }
+        ],
+        "paramDefaultValue": 1990000,
+        "paramValue": 1990000
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "OPConst1",
+        "definitionType": "user",
+        "maxValue": 1000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Policy",
+            "paramUnit": "n/a",
+            "paramLabel": "Maximum Release Volume OP #1",
+            "lang": "en-us",
+            "paramDescription": "Maximum desired reservoir release volume"
+          },
+          {
+            "paramCategory": "Politicas",
+            "paramUnit": "n/a",
+            "paramLabel": "Volumen Maximo de Liberacion OP #1",
+            "lang": "es-mx",
+            "paramDescription": "Volumen maximo de liberacion de la presa"
+          }
+        ],
+        "paramDefaultValue": 875,
+        "paramValue": 875
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "OPConst2",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Policy",
+            "paramUnit": "n/a",
+            "paramLabel": "Operating Agreement Coefficient #2",
+            "lang": "en-us",
+            "paramDescription": "Percent of San Marcial flow that will be released in low volume years when the maxium desired reservoir release volume is not possible"
+          },
+          {
+            "paramCategory": "Politicas",
+            "paramUnit": "n/a",
+            "paramLabel": "Coeficiente en Acuerdo de Operacion #2",
+            "lang": "es-mx",
+            "paramDescription": "Proporcion de flujos en San Marcial que seran liberados en periodos de bajo volumen cuando el volumen maximo deseado no es posible"
+          }
+        ],
+        "paramDefaultValue": 0.56709,
+        "paramValue": 0.56709
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "OPConst3",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Policy",
+            "paramUnit": "n/a",
+            "paramLabel": "Operating Agreement Coefficient #3",
+            "lang": "en-us",
+            "paramDescription": "Percent of previous year's reservoir volume to be released in low volume years when the maxium desired reservoir release volume is not possible"
+          },
+          {
+            "paramCategory": "Politicas",
+            "paramUnit": "n/a",
+            "paramLabel": "Coeficiente en Acuerdo de Operacion #3",
+            "lang": "es-mx",
+            "paramDescription": "Porcentaje de volumen de la presa del periodo anterior a ser liberado en periodos de bajo volumen, cuando el maximo deseado no es posible"
+          }
+        ],
+        "paramDefaultValue": 0.46873,
+        "paramValue": 0.46873
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "MAA_Recharge_Coeff_Art",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Ahadi, R., Samani, Z. and Skaggs, R., 2013. Evaluating on-farm irrigation efficiency across the watershed: A case study of New Mexico's Lower Rio Grande Basin. Agricultural water management, 124, pp.52-57.",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "n/a",
+            "paramLabel": "MAA Recharge Coefficient",
+            "lang": "en-us",
+            "paramDescription": "Return flow coefficient for surface water for agricultural use in Mesilla Alluvial aquifer"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "n/a",
+            "paramLabel": "Coeficiente de Recarga MAA",
+            "lang": "es-mx",
+            "paramDescription": "Coeficiente de recarga para agua superficiasl para uso agricola en el acuifero de la Mesilla Aluvial"
+          }
+        ],
+        "paramDefaultValue": 0.64,
+        "paramValue": 0.64
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "MIDA_Fraction_Urban",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Historical average 1994-2013",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "percent",
+            "paramLabel": "Urban Fraction from MIDA",
+            "lang": "en-us",
+            "paramDescription": "Mesilla Intermediate-Deep Aquifer proportion allocated for the urban sector"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "porcentaje",
+            "paramLabel": "Fraccion Urbana desde MIDA",
+            "lang": "es-mx",
+            "paramDescription": "Proporcion de agua del acuifero de la Mesilla a nivel intermedio-profundo para el sector urbano"
+          }
+        ],
+        "paramDefaultValue": 0.92,
+        "paramValue": 0.92
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "MIDA_Fraction_Ag",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Historical average 1994-2013",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "percent",
+            "paramLabel": "Agricultural Fraction from MIDA",
+            "lang": "en-us",
+            "paramDescription": "Mesilla Intermediate-Deep Aquifer proportion allocated for the agricultural sector"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "porcentaje",
+            "paramLabel": "Fraccion agricola desde MIDA",
+            "lang": "es-mx",
+            "paramDescription": "Proporcion de agua del acuifero de la Mesilla a nivel intermedio-profundo para el sector agricola"
+          }
+        ],
+        "paramDefaultValue": 0.08,
+        "paramValue": 0.08
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Urb_Baseline",
+        "definitionType": "scenario",
+        "maxValue": 200,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "Thousands of Acre-Feet",
+            "paramLabel": "Base Urban + Other Allocation from Hueco Bolson",
+            "lang": "en-us",
+            "paramDescription": "Base Water allocation from Hueco Bolson to the urban sector"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "Miles de Acre-Pies",
+            "paramLabel": "Reparto Base Urbano + Otros desde el Bolson del Hueco",
+            "lang": "es-mx",
+            "paramDescription": "Reparto base de agua desde el Bolson del Hueco hacia el sector urbano"
+          }
+        ],
+        "paramDefaultValue": 194,
+        "paramValue": 194
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Ag_Baseline",
+        "definitionType": "scenario",
+        "maxValue": 100,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "Thousands of Acre-Feet",
+            "paramLabel": "Base Agriculture Allocation from Hueco Bolson",
+            "lang": "en-us",
+            "paramDescription": "Base Water allocation from Hueco Bolson to the agricultural sector"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "Miles de Acre-Pies",
+            "paramLabel": "Reparto Base Agricola desde el Bolson del Hueco",
+            "lang": "es-mx",
+            "paramDescription": "Reparto base de agua desde el Bolson del Hueco hacia el sector agricola"
+          }
+        ],
+        "paramDefaultValue": 28,
+        "paramValue": 28
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Recharge_Baseline",
+        "definitionType": "scenario",
+        "maxValue": 200,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Thousands of Acre-Feet",
+            "paramLabel": "Base Recharge for Hueco Bolson",
+            "lang": "en-us",
+            "paramDescription": "Base volume of water recharge for Hueco Bolson aquifer"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Miles de Acre-Pies",
+            "paramLabel": "Recarga Base para el Bolson del Hueco",
+            "lang": "es-mx",
+            "paramDescription": "Volumen base de recarga para el Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 125,
+        "paramValue": 125
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Underalloc_Fraction",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "percent",
+            "paramLabel": "HB Fraction of Underallocation",
+            "lang": "en-us",
+            "paramDescription": "Proportion of underllocation at the Hueco Bolson"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "porcentaje",
+            "paramLabel": "Fraccion de Subasignacion en el Bolson del Hueco",
+            "lang": "es-mx",
+            "paramDescription": "Porporcion de subasignacion en el Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 0.51,
+        "paramValue": 0.51
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Underalloc_Urban_Frac",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Historical average 1994-2013",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "percent",
+            "paramLabel": "HB Urban + Other Fraction of Underallocation",
+            "lang": "en-us",
+            "paramDescription": "Fraction of underallocation of surface water replaced with groundwater for urban use from Hueco Bolson aquifer"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "porcentaje",
+            "paramLabel": "HB Fraccion de Subasignacion Urbano",
+            "lang": "es-mx",
+            "paramDescription": "Fraccion de subasigancion de agua superficial reemplazada por agua subterranea para uso en el sector urbano del Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 1,
+        "paramValue": 1
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Underalloc_Ag_Frac",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Historical average 1994-2013",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "percent",
+            "paramLabel": "HB Agricultural + Other Fraction of Underallocation",
+            "lang": "en-us",
+            "paramDescription": "Fraction of underallocation of surface water replaced with groundwater overall from Hueco Bolson aquiferr"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "porcentaje",
+            "paramLabel": "HB Agricola + Otra Subasignacion Agricola",
+            "lang": "es-mx",
+            "paramDescription": "Proporcion de subasigancion de agua superficial remplazada por agua subterranea para uso agricola en el Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 0.8,
+        "paramValue": 0.8
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_SW_Irr_Baseline",
+        "definitionType": "scenario",
+        "maxValue": 100,
+        "minValue": 0,
+        "paramDefaultSource": "Historical average 1994-2013",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "Thousands of Acre-Feet",
+            "paramLabel": "HB Surface Irrigation Baseline",
+            "lang": "en-us",
+            "paramDescription": "Baseline volume of water extracted from Hueco Bolson for surface irrigation"
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "Miles de Acre-Pies",
+            "paramLabel": "Base para Irrigacion Superficial del Bolson del Hueco",
+            "lang": "es-mx",
+            "paramDescription": "Volumen base de agua para irrigacion superficial del Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 95,
+        "paramValue": 95
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_RF_Coeff",
+        "definitionType": "scenario",
+        "maxValue": 1,
+        "minValue": -1,
+        "paramDefaultSource": "Ahadi, R., Samani, Z. and Skaggs, R., 2013. Evaluating on-farm irrigation efficiency across the watershed: A case study of New Mexico's Lower Rio Grande Basin. Agricultural water management, 124, pp.52-57.",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "n/a",
+            "paramLabel": "HB RF Coefficient",
+            "lang": "en-us",
+            "paramDescription": "Return flow coefficient for pumping for agricultural use in Hueco Bolson aquifer"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "n/a",
+            "paramLabel": "Coeficiente de RF en HB",
+            "lang": "es-mx",
+            "paramDescription": "Cieficiente de recarga en bombeo en el Bolson del Hueco para uso agricola"
+          }
+        ],
+        "paramDefaultValue": 0.36,
+        "paramValue": 0.36
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "HB_Net_Recharge",
+        "definitionType": "scenario",
+        "maxValue": 100,
+        "minValue": 0,
+        "paramDefaultSource": "Sheng, Z., 2013. Impacts of groundwater pumping and climate variability on groundwater availability in the Rio Grande Basin. Ecosphere, 4(1), pp.1-25.",
+        "structType": "scalar",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Thousands of Acre-Feet",
+            "paramLabel": "HB Net Recharge",
+            "lang": "en-us",
+            "paramDescription": "Hueco Bolson aquifer natural water recharge"
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Miles de Acre-Pies",
+            "paramLabel": "Recarga Neta en HB",
+            "lang": "es-mx",
+            "paramDescription": "Recarga de agua natural en el Bolson del Hueco"
+          }
+        ],
+        "paramDefaultValue": 16,
+        "paramValue": 16
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "Years",
+        "definitionType": "scenario",
+        "maxValue": 2070,
+        "minValue": 2020,
+        "paramDefaultSource": "",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "General",
+            "paramUnit": "year",
+            "paramLabel": "Years",
+            "lang": "en-us",
+            "paramDescription": "List of timesteps in years"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "año",
+            "paramLabel": "Años",
+            "lang": "es-mx",
+            "paramDescription": "Pasos de tiempo en años"
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 2020
+          },
+          {
+            "value": 2021
+          },
+          {
+            "value": 2022
+          },
+          {
+            "value": 2023
+          },
+          {
+            "value": 2024
+          },
+          {
+            "value": 2025
+          },
+          {
+            "value": 2026
+          },
+          {
+            "value": 2027
+          },
+          {
+            "value": 2028
+          },
+          {
+            "value": 2029
+          },
+          {
+            "value": 2030
+          },
+          {
+            "value": 2031
+          },
+          {
+            "value": 2032
+          },
+          {
+            "value": 2033
+          },
+          {
+            "value": 2034
+          },
+          {
+            "value": 2035
+          },
+          {
+            "value": 2036
+          },
+          {
+            "value": 2037
+          },
+          {
+            "value": 2038
+          },
+          {
+            "value": 2039
+          },
+          {
+            "value": 2040
+          },
+          {
+            "value": 2041
+          },
+          {
+            "value": 2042
+          },
+          {
+            "value": 2043
+          },
+          {
+            "value": 2044
+          },
+          {
+            "value": 2045
+          },
+          {
+            "value": 2046
+          },
+          {
+            "value": 2047
+          },
+          {
+            "value": 2048
+          },
+          {
+            "value": 2049
+          },
+          {
+            "value": 2050
+          },
+          {
+            "value": 2051
+          },
+          {
+            "value": 2052
+          },
+          {
+            "value": 2053
+          },
+          {
+            "value": 2054
+          },
+          {
+            "value": 2055
+          },
+          {
+            "value": 2056
+          },
+          {
+            "value": 2057
+          },
+          {
+            "value": 2058
+          },
+          {
+            "value": 2059
+          },
+          {
+            "value": 2060
+          },
+          {
+            "value": 2061
+          },
+          {
+            "value": 2062
+          },
+          {
+            "value": 2063
+          },
+          {
+            "value": 2064
+          },
+          {
+            "value": 2065
+          },
+          {
+            "value": 2066
+          },
+          {
+            "value": 2067
+          },
+          {
+            "value": 2068
+          },
+          {
+            "value": 2069
+          },
+          {
+            "value": 2070
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 2020
+          },
+          {
+            "value": 2021
+          },
+          {
+            "value": 2022
+          },
+          {
+            "value": 2023
+          },
+          {
+            "value": 2024
+          },
+          {
+            "value": 2025
+          },
+          {
+            "value": 2026
+          },
+          {
+            "value": 2027
+          },
+          {
+            "value": 2028
+          },
+          {
+            "value": 2029
+          },
+          {
+            "value": 2030
+          },
+          {
+            "value": 2031
+          },
+          {
+            "value": 2032
+          },
+          {
+            "value": 2033
+          },
+          {
+            "value": 2034
+          },
+          {
+            "value": 2035
+          },
+          {
+            "value": 2036
+          },
+          {
+            "value": 2037
+          },
+          {
+            "value": 2038
+          },
+          {
+            "value": 2039
+          },
+          {
+            "value": 2040
+          },
+          {
+            "value": 2041
+          },
+          {
+            "value": 2042
+          },
+          {
+            "value": 2043
+          },
+          {
+            "value": 2044
+          },
+          {
+            "value": 2045
+          },
+          {
+            "value": 2046
+          },
+          {
+            "value": 2047
+          },
+          {
+            "value": 2048
+          },
+          {
+            "value": 2049
+          },
+          {
+            "value": 2050
+          },
+          {
+            "value": 2051
+          },
+          {
+            "value": 2052
+          },
+          {
+            "value": 2053
+          },
+          {
+            "value": 2054
+          },
+          {
+            "value": 2055
+          },
+          {
+            "value": 2056
+          },
+          {
+            "value": 2057
+          },
+          {
+            "value": 2058
+          },
+          {
+            "value": 2059
+          },
+          {
+            "value": 2060
+          },
+          {
+            "value": 2061
+          },
+          {
+            "value": 2062
+          },
+          {
+            "value": 2063
+          },
+          {
+            "value": 2064
+          },
+          {
+            "value": 2065
+          },
+          {
+            "value": 2066
+          },
+          {
+            "value": 2067
+          },
+          {
+            "value": 2068
+          },
+          {
+            "value": 2069
+          },
+          {
+            "value": 2070
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EB_PrecG_in",
+        "definitionType": "scenario",
+        "maxValue": 100,
+        "minValue": 0,
+        "paramDefaultSource": "Livneh, B. et al. A spatially comprehensive, hydrometeorological data set for Mexico, the U.S., and Southern Canada 1950–2013. Sci. Data 2:150042 doi: 10.1038/sdata.2015.42 (2015).",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "inches/yr",
+            "paramLabel": "Precipitation at Elephant Butte",
+            "lang": "en-us",
+            "paramDescription": "Yearly localized precipitation at Elephant Butte reservoir in inches"
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "pulgadas/año",
+            "paramLabel": "Precipitacion en la Presa del Elefante",
+            "lang": "es-mx",
+            "paramDescription": "Precipitacion local anual en la Presa del Elefante en pulgadas"
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 11.2
+          },
+          {
+            "value": 12.6
+          },
+          {
+            "value": 13.9
+          },
+          {
+            "value": 7.5
+          },
+          {
+            "value": 9
+          },
+          {
+            "value": 19.6
+          },
+          {
+            "value": 10.6
+          },
+          {
+            "value": 14.6
+          },
+          {
+            "value": 10.1
+          },
+          {
+            "value": 11.8
+          },
+          {
+            "value": 14.9
+          },
+          {
+            "value": 17.3
+          },
+          {
+            "value": 9.8
+          },
+          {
+            "value": 11.8
+          },
+          {
+            "value": 11.7
+          },
+          {
+            "value": 9.6
+          },
+          {
+            "value": 12.2
+          },
+          {
+            "value": 8.4
+          },
+          {
+            "value": 10.8
+          },
+          {
+            "value": 15.1
+          },
+          {
+            "value": 14.1
+          },
+          {
+            "value": 12.9
+          },
+          {
+            "value": 12.3
+          },
+          {
+            "value": 11.1
+          },
+          {
+            "value": 15
+          },
+          {
+            "value": 12.4
+          },
+          {
+            "value": 8.3
+          },
+          {
+            "value": 6.7
+          },
+          {
+            "value": 12.1
+          },
+          {
+            "value": 14.1
+          },
+          {
+            "value": 14.2
+          },
+          {
+            "value": 9.1
+          },
+          {
+            "value": 15
+          },
+          {
+            "value": 13
+          },
+          {
+            "value": 11.7
+          },
+          {
+            "value": 18.3
+          },
+          {
+            "value": 12
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 13.3
+          },
+          {
+            "value": 14.3
+          },
+          {
+            "value": 10.1
+          },
+          {
+            "value": 9.8
+          },
+          {
+            "value": 17.2
+          },
+          {
+            "value": 19.5
+          },
+          {
+            "value": 24.3
+          },
+          {
+            "value": 17.8
+          },
+          {
+            "value": 12.5
+          },
+          {
+            "value": 19.1
+          },
+          {
+            "value": 13.6
+          },
+          {
+            "value": 21.9
+          },
+          {
+            "value": 13.5
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 11.2
+          },
+          {
+            "value": 12.6
+          },
+          {
+            "value": 13.9
+          },
+          {
+            "value": 7.5
+          },
+          {
+            "value": 9
+          },
+          {
+            "value": 19.6
+          },
+          {
+            "value": 10.6
+          },
+          {
+            "value": 14.6
+          },
+          {
+            "value": 10.1
+          },
+          {
+            "value": 11.8
+          },
+          {
+            "value": 14.9
+          },
+          {
+            "value": 17.3
+          },
+          {
+            "value": 9.8
+          },
+          {
+            "value": 11.8
+          },
+          {
+            "value": 11.7
+          },
+          {
+            "value": 9.6
+          },
+          {
+            "value": 12.2
+          },
+          {
+            "value": 8.4
+          },
+          {
+            "value": 10.8
+          },
+          {
+            "value": 15.1
+          },
+          {
+            "value": 14.1
+          },
+          {
+            "value": 12.9
+          },
+          {
+            "value": 12.3
+          },
+          {
+            "value": 11.1
+          },
+          {
+            "value": 15
+          },
+          {
+            "value": 12.4
+          },
+          {
+            "value": 8.3
+          },
+          {
+            "value": 6.7
+          },
+          {
+            "value": 12.1
+          },
+          {
+            "value": 14.1
+          },
+          {
+            "value": 14.2
+          },
+          {
+            "value": 9.1
+          },
+          {
+            "value": 15
+          },
+          {
+            "value": 13
+          },
+          {
+            "value": 11.7
+          },
+          {
+            "value": 18.3
+          },
+          {
+            "value": 12
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 13.3
+          },
+          {
+            "value": 14.3
+          },
+          {
+            "value": 10.1
+          },
+          {
+            "value": 9.8
+          },
+          {
+            "value": 17.2
+          },
+          {
+            "value": 19.5
+          },
+          {
+            "value": 24.3
+          },
+          {
+            "value": 17.8
+          },
+          {
+            "value": 12.5
+          },
+          {
+            "value": 19.1
+          },
+          {
+            "value": 13.6
+          },
+          {
+            "value": 21.9
+          },
+          {
+            "value": 13.5
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EB_Pan_in",
+        "definitionType": "user",
+        "maxValue": 200,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "inches/yr",
+            "paramLabel": "Elephant Butte Pan Evaporation",
+            "lang": "en-us",
+            "paramDescription": "Year average Pan Evaporation at Elephant Butte Reservoir"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "pulgadas/año",
+            "paramLabel": "Evaporacion de bandeja en la Presa del Elefante",
+            "lang": "es-mx",
+            "paramDescription": "Promedio anual de evaporacion de bandeja en la Presa del Elefante"
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 156
+          },
+          {
+            "value": 138
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 136
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 136
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 142
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 143
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 149
+          },
+          {
+            "value": 144
+          },
+          {
+            "value": 135
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 145
+          },
+          {
+            "value": 150
+          },
+          {
+            "value": 151
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 152
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 163
+          },
+          {
+            "value": 150
+          },
+          {
+            "value": 152
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 144
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 167
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 161
+          },
+          {
+            "value": 168
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 162
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 164
+          },
+          {
+            "value": 166
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 161
+          },
+          {
+            "value": 163
+          },
+          {
+            "value": 168
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 156
+          },
+          {
+            "value": 138
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 136
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 136
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 142
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 140
+          },
+          {
+            "value": 143
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 149
+          },
+          {
+            "value": 144
+          },
+          {
+            "value": 135
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 145
+          },
+          {
+            "value": 150
+          },
+          {
+            "value": 151
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 152
+          },
+          {
+            "value": 141
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 163
+          },
+          {
+            "value": 150
+          },
+          {
+            "value": 152
+          },
+          {
+            "value": 156
+          },
+          {
+            "value": 144
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 167
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 161
+          },
+          {
+            "value": 168
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 153
+          },
+          {
+            "value": 162
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 155
+          },
+          {
+            "value": 164
+          },
+          {
+            "value": 166
+          },
+          {
+            "value": 147
+          },
+          {
+            "value": 154
+          },
+          {
+            "value": 161
+          },
+          {
+            "value": 163
+          },
+          {
+            "value": 168
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "Cab_WH_in",
+        "definitionType": "user",
+        "maxValue": 1000000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Watershed Input at Caballo",
+            "lang": "en-us",
+            "paramDescription": "Regional volume of water drained into Caballo reservoir. Yearly averages from 2020 to 2070."
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Flujos a la cuenca del Caballo",
+            "lang": "es-mx",
+            "paramDescription": "Volumen de agua regional drenada a la presa del Caballo. Promedios anuales desde 2020 a 2070."
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 102000
+          },
+          {
+            "value": 115000
+          },
+          {
+            "value": 127000
+          },
+          {
+            "value": 68800
+          },
+          {
+            "value": 81900
+          },
+          {
+            "value": 179000
+          },
+          {
+            "value": 96800
+          },
+          {
+            "value": 134000
+          },
+          {
+            "value": 92600
+          },
+          {
+            "value": 108000
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 158000
+          },
+          {
+            "value": 89700
+          },
+          {
+            "value": 108000
+          },
+          {
+            "value": 107000
+          },
+          {
+            "value": 87600
+          },
+          {
+            "value": 112000
+          },
+          {
+            "value": 77200
+          },
+          {
+            "value": 98400
+          },
+          {
+            "value": 138000
+          },
+          {
+            "value": 129000
+          },
+          {
+            "value": 118000
+          },
+          {
+            "value": 113000
+          },
+          {
+            "value": 102000
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 114000
+          },
+          {
+            "value": 75800
+          },
+          {
+            "value": 61400
+          },
+          {
+            "value": 111000
+          },
+          {
+            "value": 129000
+          },
+          {
+            "value": 130000
+          },
+          {
+            "value": 83400
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 118000
+          },
+          {
+            "value": 107000
+          },
+          {
+            "value": 167000
+          },
+          {
+            "value": 110000
+          },
+          {
+            "value": 146000
+          },
+          {
+            "value": 121000
+          },
+          {
+            "value": 131000
+          },
+          {
+            "value": 92600
+          },
+          {
+            "value": 89900
+          },
+          {
+            "value": 157000
+          },
+          {
+            "value": 178000
+          },
+          {
+            "value": 222000
+          },
+          {
+            "value": 162000
+          },
+          {
+            "value": 115000
+          },
+          {
+            "value": 174000
+          },
+          {
+            "value": 124000
+          },
+          {
+            "value": 201000
+          },
+          {
+            "value": 123000
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 102000
+          },
+          {
+            "value": 115000
+          },
+          {
+            "value": 127000
+          },
+          {
+            "value": 68800
+          },
+          {
+            "value": 81900
+          },
+          {
+            "value": 179000
+          },
+          {
+            "value": 96800
+          },
+          {
+            "value": 134000
+          },
+          {
+            "value": 92600
+          },
+          {
+            "value": 108000
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 158000
+          },
+          {
+            "value": 89700
+          },
+          {
+            "value": 108000
+          },
+          {
+            "value": 107000
+          },
+          {
+            "value": 87600
+          },
+          {
+            "value": 112000
+          },
+          {
+            "value": 77200
+          },
+          {
+            "value": 98400
+          },
+          {
+            "value": 138000
+          },
+          {
+            "value": 129000
+          },
+          {
+            "value": 118000
+          },
+          {
+            "value": 113000
+          },
+          {
+            "value": 102000
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 114000
+          },
+          {
+            "value": 75800
+          },
+          {
+            "value": 61400
+          },
+          {
+            "value": 111000
+          },
+          {
+            "value": 129000
+          },
+          {
+            "value": 130000
+          },
+          {
+            "value": 83400
+          },
+          {
+            "value": 137000
+          },
+          {
+            "value": 118000
+          },
+          {
+            "value": 107000
+          },
+          {
+            "value": 167000
+          },
+          {
+            "value": 110000
+          },
+          {
+            "value": 146000
+          },
+          {
+            "value": 121000
+          },
+          {
+            "value": 131000
+          },
+          {
+            "value": 92600
+          },
+          {
+            "value": 89900
+          },
+          {
+            "value": 157000
+          },
+          {
+            "value": 178000
+          },
+          {
+            "value": 222000
+          },
+          {
+            "value": 162000
+          },
+          {
+            "value": 115000
+          },
+          {
+            "value": 174000
+          },
+          {
+            "value": 124000
+          },
+          {
+            "value": 201000
+          },
+          {
+            "value": 123000
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "SanMarInObs",
+        "definitionType": "static",
+        "maxValue": 10000000,
+        "minValue": 0,
+        "paramDefaultSource": "D.S. Gutzler (UNM), Townsend, N.T.(UNM)",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Observed Inflows at San Marcial Gauges",
+            "lang": "en-us",
+            "paramDescription": "Observed upstream Water supply to Elephant Butte Reservoir through San Marcial Combined Gauges (1994-2013)."
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Suministro Observado en San Marcial",
+            "lang": "es-mx",
+            "paramDescription": "Suministro de agua observado a la Presa del Elefante atraves de San Marcial (1994-2013)."
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 1144700
+          },
+          {
+            "value": 1394510
+          },
+          {
+            "value": 447980
+          },
+          {
+            "value": 1142560
+          },
+          {
+            "value": 767350
+          },
+          {
+            "value": 863910
+          },
+          {
+            "value": 432660
+          },
+          {
+            "value": 441390
+          },
+          {
+            "value": 241650
+          },
+          {
+            "value": 202780
+          },
+          {
+            "value": 406810
+          },
+          {
+            "value": 968260
+          },
+          {
+            "value": 593110
+          },
+          {
+            "value": 514090
+          },
+          {
+            "value": 932220
+          },
+          {
+            "value": 694050
+          },
+          {
+            "value": 541360
+          },
+          {
+            "value": 308920
+          },
+          {
+            "value": 288430
+          },
+          {
+            "value": 303070
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 1144700
+          },
+          {
+            "value": 1394510
+          },
+          {
+            "value": 447980
+          },
+          {
+            "value": 1142560
+          },
+          {
+            "value": 767350
+          },
+          {
+            "value": 863910
+          },
+          {
+            "value": 432660
+          },
+          {
+            "value": 441390
+          },
+          {
+            "value": 241650
+          },
+          {
+            "value": 202780
+          },
+          {
+            "value": 406810
+          },
+          {
+            "value": 968260
+          },
+          {
+            "value": 593110
+          },
+          {
+            "value": 514090
+          },
+          {
+            "value": 932220
+          },
+          {
+            "value": 694050
+          },
+          {
+            "value": 541360
+          },
+          {
+            "value": 308920
+          },
+          {
+            "value": 288430
+          },
+          {
+            "value": 303070
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "CaballoRelObs",
+        "definitionType": "static",
+        "maxValue": 10000000,
+        "minValue": 0,
+        "paramDefaultSource": "D.S. Gutzler (UNM), Townsend, N.T.(UNM)",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Allocation",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Observed Caballo Reservoir Releases",
+            "lang": "en-us",
+            "paramDescription": "Observed water releases from Caballo reservoir (1994-2013)."
+          },
+          {
+            "paramCategory": "Reparto",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Descarga Observeda Caballo",
+            "lang": "es-mx",
+            "paramDescription": "Descargas de agua observadas de la presa El Caballo (1994-2013)."
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 870060
+          },
+          {
+            "value": 1094640
+          },
+          {
+            "value": 774580
+          },
+          {
+            "value": 798760
+          },
+          {
+            "value": 808910
+          },
+          {
+            "value": 735620
+          },
+          {
+            "value": 751590
+          },
+          {
+            "value": 786790
+          },
+          {
+            "value": 801370
+          },
+          {
+            "value": 364660
+          },
+          {
+            "value": 399640
+          },
+          {
+            "value": 676260
+          },
+          {
+            "value": 434290
+          },
+          {
+            "value": 636610
+          },
+          {
+            "value": 675410
+          },
+          {
+            "value": 693840
+          },
+          {
+            "value": 660420
+          },
+          {
+            "value": 396760
+          },
+          {
+            "value": 371680
+          },
+          {
+            "value": 168600
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 870060
+          },
+          {
+            "value": 1094640
+          },
+          {
+            "value": 774580
+          },
+          {
+            "value": 798760
+          },
+          {
+            "value": 808910
+          },
+          {
+            "value": 735620
+          },
+          {
+            "value": 751590
+          },
+          {
+            "value": 786790
+          },
+          {
+            "value": 801370
+          },
+          {
+            "value": 364660
+          },
+          {
+            "value": 399640
+          },
+          {
+            "value": 676260
+          },
+          {
+            "value": 434290
+          },
+          {
+            "value": 636610
+          },
+          {
+            "value": 675410
+          },
+          {
+            "value": 693840
+          },
+          {
+            "value": 660420
+          },
+          {
+            "value": 396760
+          },
+          {
+            "value": 371680
+          },
+          {
+            "value": 168600
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "StorageResObs",
+        "definitionType": "static",
+        "maxValue": 10000000,
+        "minValue": 0,
+        "paramDefaultSource": "D.S. Gutzler (UNM), Townsend, N.T.(UNM)",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Storage",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Observed Storage at Elephant Butte",
+            "lang": "en-us",
+            "paramDescription": "Observed water volume at Elephant Butte reservoir (1994-2013)."
+          },
+          {
+            "paramCategory": "Almacenamiento",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Almacenamiento Observado en Presa del Elefante Butte",
+            "lang": "es-mx",
+            "paramDescription": "Volumen de agua almacenada en la presa del Elefante Butte (1994-2013)."
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 1960280
+          },
+          {
+            "value": 1958740
+          },
+          {
+            "value": 1773300
+          },
+          {
+            "value": 1732260
+          },
+          {
+            "value": 1758010
+          },
+          {
+            "value": 1624690
+          },
+          {
+            "value": 1400470
+          },
+          {
+            "value": 1020400
+          },
+          {
+            "value": 539520
+          },
+          {
+            "value": 262780
+          },
+          {
+            "value": 193200
+          },
+          {
+            "value": 368710
+          },
+          {
+            "value": 370270
+          },
+          {
+            "value": 470730
+          },
+          {
+            "value": 559740
+          },
+          {
+            "value": 565560
+          },
+          {
+            "value": 478160
+          },
+          {
+            "value": 319190
+          },
+          {
+            "value": 240840
+          },
+          {
+            "value": 178710
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 1960280
+          },
+          {
+            "value": 1958740
+          },
+          {
+            "value": 1773300
+          },
+          {
+            "value": 1732260
+          },
+          {
+            "value": 1758010
+          },
+          {
+            "value": 1624690
+          },
+          {
+            "value": 1400470
+          },
+          {
+            "value": 1020400
+          },
+          {
+            "value": 539520
+          },
+          {
+            "value": 262780
+          },
+          {
+            "value": 193200
+          },
+          {
+            "value": 368710
+          },
+          {
+            "value": 370270
+          },
+          {
+            "value": 470730
+          },
+          {
+            "value": 559740
+          },
+          {
+            "value": 565560
+          },
+          {
+            "value": 478160
+          },
+          {
+            "value": 319190
+          },
+          {
+            "value": 240840
+          },
+          {
+            "value": 178710
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EB_Pan_in_obs",
+        "definitionType": "static",
+        "maxValue": 200,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "inches/yr",
+            "paramLabel": "Observed Elephant Butte Pan Evaporation",
+            "lang": "en-us",
+            "paramDescription": "Year average observed Pan Evaporation at Elephant Butte Reservoir between 1994 and 2013"
+          },
+          {
+            "paramCategory": "General",
+            "paramUnit": "pulgadas/año",
+            "paramLabel": "Evaporacion Observada en la Presa del Elefante",
+            "lang": "es-mx",
+            "paramDescription": "Promedio anual observado de evaporacion de bandeja en la Presa del Elefante Butte entre 1994 y 2013"
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 121
+          },
+          {
+            "value": 125
+          },
+          {
+            "value": 127
+          },
+          {
+            "value": 113
+          },
+          {
+            "value": 130
+          },
+          {
+            "value": 128
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 122
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 137
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 123
+          },
+          {
+            "value": 115
+          },
+          {
+            "value": 129
+          },
+          {
+            "value": 125
+          },
+          {
+            "value": 127
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 123
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 121
+          },
+          {
+            "value": 125
+          },
+          {
+            "value": 127
+          },
+          {
+            "value": 113
+          },
+          {
+            "value": 130
+          },
+          {
+            "value": 128
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 122
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 137
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 121
+          },
+          {
+            "value": 123
+          },
+          {
+            "value": 115
+          },
+          {
+            "value": 129
+          },
+          {
+            "value": 125
+          },
+          {
+            "value": 127
+          },
+          {
+            "value": 146
+          },
+          {
+            "value": 139
+          },
+          {
+            "value": 123
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "EB_PrecG_in_obs",
+        "definitionType": "static",
+        "maxValue": 100,
+        "minValue": 0,
+        "paramDefaultSource": "Livneh, B. et al. A spatially comprehensive, hydrometeorological data set for Mexico, the U.S., and Southern Canada 1950–2013. Sci. Data 2:150042 doi: 10.1038/sdata.2015.42 (2015).",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "inches/yr",
+            "paramLabel": "Observed Precipitation at Elephant Butte",
+            "lang": "en-us",
+            "paramDescription": "Yearly observed localized precipitation at Elephant Butte reservoir from 1994 to 2013"
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "pulgadas/año",
+            "paramLabel": "Precipitacion Observada en la Presa del Elefante",
+            "lang": "es-mx",
+            "paramDescription": "Precipitacion local anual observada en la Presa del Elefante desde 1994 hasta 2013"
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 9.4
+          },
+          {
+            "value": 6.6
+          },
+          {
+            "value": 10.3
+          },
+          {
+            "value": 11.1
+          },
+          {
+            "value": 8.8
+          },
+          {
+            "value": 13.7
+          },
+          {
+            "value": 13.4
+          },
+          {
+            "value": 8.1
+          },
+          {
+            "value": 5.9
+          },
+          {
+            "value": 6.6
+          },
+          {
+            "value": 9.5
+          },
+          {
+            "value": 8.9
+          },
+          {
+            "value": 14.2
+          },
+          {
+            "value": 8.1
+          },
+          {
+            "value": 12.2
+          },
+          {
+            "value": 8.6
+          },
+          {
+            "value": 10.4
+          },
+          {
+            "value": 10.6
+          },
+          {
+            "value": 4.5
+          },
+          {
+            "value": 9.5
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 9.4
+          },
+          {
+            "value": 6.6
+          },
+          {
+            "value": 10.3
+          },
+          {
+            "value": 11.1
+          },
+          {
+            "value": 8.8
+          },
+          {
+            "value": 13.7
+          },
+          {
+            "value": 13.4
+          },
+          {
+            "value": 8.1
+          },
+          {
+            "value": 5.9
+          },
+          {
+            "value": 6.6
+          },
+          {
+            "value": 9.5
+          },
+          {
+            "value": 8.9
+          },
+          {
+            "value": 14.2
+          },
+          {
+            "value": 8.1
+          },
+          {
+            "value": 12.2
+          },
+          {
+            "value": 8.6
+          },
+          {
+            "value": 10.4
+          },
+          {
+            "value": 10.6
+          },
+          {
+            "value": 4.5
+          },
+          {
+            "value": 9.5
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "Cab_WH_in_obs",
+        "definitionType": "static",
+        "maxValue": 1000000,
+        "minValue": 0,
+        "paramDefaultSource": "",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Observed Watershed Input at Caballo",
+            "lang": "en-us",
+            "paramDescription": "Observed Regional volume of water drained into Caballo reservoir. Yearly averages from 1994 to 2013."
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Flujos Observados a la cuenca del Caballo",
+            "lang": "es-mx",
+            "paramDescription": "Volumen de agua regional drenada a la presa del Caballo. Promedios anuales observados desde 1994 a 2013."
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 86100
+          },
+          {
+            "value": 60700
+          },
+          {
+            "value": 94200
+          },
+          {
+            "value": 102000
+          },
+          {
+            "value": 80600
+          },
+          {
+            "value": 125000
+          },
+          {
+            "value": 122000
+          },
+          {
+            "value": 73700
+          },
+          {
+            "value": 54200
+          },
+          {
+            "value": 60700
+          },
+          {
+            "value": 86900
+          },
+          {
+            "value": 81200
+          },
+          {
+            "value": 130000
+          },
+          {
+            "value": 74100
+          },
+          {
+            "value": 111000
+          },
+          {
+            "value": 78600
+          },
+          {
+            "value": 95100
+          },
+          {
+            "value": 97300
+          },
+          {
+            "value": 41200
+          },
+          {
+            "value": 86700
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 86100
+          },
+          {
+            "value": 60700
+          },
+          {
+            "value": 94200
+          },
+          {
+            "value": 102000
+          },
+          {
+            "value": 80600
+          },
+          {
+            "value": 125000
+          },
+          {
+            "value": 122000
+          },
+          {
+            "value": 73700
+          },
+          {
+            "value": 54200
+          },
+          {
+            "value": 60700
+          },
+          {
+            "value": 86900
+          },
+          {
+            "value": 81200
+          },
+          {
+            "value": 130000
+          },
+          {
+            "value": 74100
+          },
+          {
+            "value": 111000
+          },
+          {
+            "value": 78600
+          },
+          {
+            "value": 95100
+          },
+          {
+            "value": 97300
+          },
+          {
+            "value": 41200
+          },
+          {
+            "value": 86700
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "dataType": "double",
+        "paramName": "SanMarIn",
+        "definitionType": "user",
+        "maxValue": 10000000,
+        "minValue": 0,
+        "paramDefaultSource": "Townsend, N.T., and D.S. Gutzler, 2020: Adaptation of climate model projections of streamflow to account for anthropogenic flow impairments. Journal of the American Water Resources Association (JAWRA).",
+        "structType": "matrix",
+        "structDimension": "1",
+        "paraminfo": [
+          {
+            "paramCategory": "Climate",
+            "paramUnit": "Acre-Feet",
+            "paramLabel": "Inflows at San Marcial Gauges",
+            "lang": "en-us",
+            "paramDescription": "Upstream Water supply to Elephant Butte Reservoir through San Marcial Gauges."
+          },
+          {
+            "paramCategory": "Clima",
+            "paramUnit": "Acre-Pies",
+            "paramLabel": "Suministro en San Marcial",
+            "lang": "es-mx",
+            "paramDescription": "Suministro de agua a la Presa del Elefante atraves de San Marcial"
+          }
+        ],
+        "paramBenchMarks": [
+          {
+            "benchmarkLabel": "San Marcial Mean Flows (1964-2013)",
+            "benchmarkLang": "en-us",
+            "benchmarkDescription": "Temporal mean of combined San Marcial gauges from 1964 to 2013 in acre-feet",
+            "benchmarkSource": "D. Gutzler (UNM)",
+            "benchmarkValue": 762890
+          },
+          {
+            "benchmarkLabel": "San Marcial Mean Flows (1994-2013)",
+            "benchmarkLang": "en-us",
+            "benchmarkDescription": "Temporal mean of combined San Marcial gauges from 1994 to 2013 in acre-feet",
+            "benchmarkSource": "D. Gutzler (UNM)",
+            "benchmarkValue": 631490
+          },
+          {
+            "benchmarkLabel": "Flujos Promedio en San Marcial (1994-2013)",
+            "benchmarkLang": "es-mx",
+            "benchmarkDescription": "Promedio temporal de la combinacion de  flujos en San Marcial desde 1994 a 2013 en acre-pies",
+            "benchmarkSource": "D. Gutzler (UNM)",
+            "benchmarkValue": 631490
+          },
+          {
+            "benchmarkLabel": "Flujos Promedio en San Marcial (1964-2013)",
+            "benchmarkLang": "es-mx",
+            "benchmarkDescription": "Promedio temporal de la combinacion de  flujos en San Marcial desde 1964 a 2013 in acre-pies",
+            "benchmarkSource": "D. Gutzler (UNM)",
+            "benchmarkValue": 762890
+          }
+        ],
+        "paramDefaultValue": [
+          {
+            "value": 256220
+          },
+          {
+            "value": 1647100
+          },
+          {
+            "value": 613250
+          },
+          {
+            "value": 1188030
+          },
+          {
+            "value": 925300
+          },
+          {
+            "value": 711470
+          },
+          {
+            "value": 1264890
+          },
+          {
+            "value": 957490
+          },
+          {
+            "value": 384420
+          },
+          {
+            "value": 507700
+          },
+          {
+            "value": 646230
+          },
+          {
+            "value": 251850
+          },
+          {
+            "value": 250750
+          },
+          {
+            "value": 447150
+          },
+          {
+            "value": 429430
+          },
+          {
+            "value": 423530
+          },
+          {
+            "value": 689790
+          },
+          {
+            "value": 538210
+          },
+          {
+            "value": 429660
+          },
+          {
+            "value": 1291170
+          },
+          {
+            "value": 876120
+          },
+          {
+            "value": 395600
+          },
+          {
+            "value": 306190
+          },
+          {
+            "value": 395970
+          },
+          {
+            "value": 752730
+          },
+          {
+            "value": 384360
+          },
+          {
+            "value": 315290
+          },
+          {
+            "value": 223860
+          },
+          {
+            "value": 724330
+          },
+          {
+            "value": 316140
+          },
+          {
+            "value": 309660
+          },
+          {
+            "value": 326960
+          },
+          {
+            "value": 417360
+          },
+          {
+            "value": 518000
+          },
+          {
+            "value": 416890
+          },
+          {
+            "value": 352260
+          },
+          {
+            "value": 268690
+          },
+          {
+            "value": 454430
+          },
+          {
+            "value": 399940
+          },
+          {
+            "value": 731050
+          },
+          {
+            "value": 292430
+          },
+          {
+            "value": 446740
+          },
+          {
+            "value": 430610
+          },
+          {
+            "value": 271880
+          },
+          {
+            "value": 223960
+          },
+          {
+            "value": 303400
+          },
+          {
+            "value": 620410
+          },
+          {
+            "value": 366410
+          },
+          {
+            "value": 298720
+          },
+          {
+            "value": 452310
+          },
+          {
+            "value": 254870
+          }
+        ],
+        "paramValue": [
+          {
+            "value": 256220
+          },
+          {
+            "value": 1647100
+          },
+          {
+            "value": 613250
+          },
+          {
+            "value": 1188030
+          },
+          {
+            "value": 925300
+          },
+          {
+            "value": 711470
+          },
+          {
+            "value": 1264890
+          },
+          {
+            "value": 957490
+          },
+          {
+            "value": 384420
+          },
+          {
+            "value": 507700
+          },
+          {
+            "value": 646230
+          },
+          {
+            "value": 251850
+          },
+          {
+            "value": 250750
+          },
+          {
+            "value": 447150
+          },
+          {
+            "value": 429430
+          },
+          {
+            "value": 423530
+          },
+          {
+            "value": 689790
+          },
+          {
+            "value": 538210
+          },
+          {
+            "value": 429660
+          },
+          {
+            "value": 1291170
+          },
+          {
+            "value": 876120
+          },
+          {
+            "value": 395600
+          },
+          {
+            "value": 306190
+          },
+          {
+            "value": 395970
+          },
+          {
+            "value": 752730
+          },
+          {
+            "value": 384360
+          },
+          {
+            "value": 315290
+          },
+          {
+            "value": 223860
+          },
+          {
+            "value": 724330
+          },
+          {
+            "value": 316140
+          },
+          {
+            "value": 309660
+          },
+          {
+            "value": 326960
+          },
+          {
+            "value": 417360
+          },
+          {
+            "value": 518000
+          },
+          {
+            "value": 416890
+          },
+          {
+            "value": 352260
+          },
+          {
+            "value": 268690
+          },
+          {
+            "value": 454430
+          },
+          {
+            "value": 399940
+          },
+          {
+            "value": 731050
+          },
+          {
+            "value": 292430
+          },
+          {
+            "value": 446740
+          },
+          {
+            "value": 430610
+          },
+          {
+            "value": 271880
+          },
+          {
+            "value": 223960
+          },
+          {
+            "value": 303400
+          },
+          {
+            "value": 620410
+          },
+          {
+            "value": 366410
+          },
+          {
+            "value": 298720
+          },
+          {
+            "value": 452310
+          },
+          {
+            "value": 254870
+          }
+        ]
+      }
+    ],
+    "modelOutputs": [
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "RG_SEvap",
+        "varinfo": [
+          {
+            "varLabel": "Rio Grande Project Storage Evaporation",
+            "varCategory": "Storage",
+            "lang": "en-us",
+            "varDescription": "Water loss due to evaporation from open water surface storage locations which includes Elephant Butte and Caballo reservoirs",
+            "varUnit": "Acre-Feet"
+          },
+          {
+            "varLabel": "Evaporación en Reservas del Proyecto del Rio Bravo",
+            "varCategory": "Almacenamiento",
+            "lang": "es-mx",
+            "varDescription": "Pérdidas de agua debido a la evaporación de masas abiertas de agua almacenadas en reservas superficiales las cuales incluyen la presa del Elefante Butte y del Caballo",
+            "varUnit": "Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MAA_Ag",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Alluvial Cumulative loss from Agriculture",
+            "varCategory": "Allocation",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Mesilla shallow depth aquifer for agricultural use",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Cumulativa de Mesilla Aluvial por sector Agricola",
+            "varCategory": "Reparto",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla poco profundo para uso agrícola",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MAA_Recharge",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Alluvial Cumulative Recharge",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual water recharge to the Mesilla shallow depth aquifer",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Recarga acumulativa en Mesilla Aluvial",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Recarga anual de agua al acuífero de la Mesilla a niveles de poca profundidad",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MIDA_Cum_Loss",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Intermediate Total Cumulative Loss",
+            "varCategory": "Storage",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer from both urban and agricultural sectors",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Total Acumulativa en Mesilla Intermedio",
+            "varCategory": "Almacenamiento",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso urbano y agrícola",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MIDA_Urban",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Intermediate Cumulative Urban Loss",
+            "varCategory": "Allocation",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer for urban use",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Urbana Acumulativa en la Mesilla Intermedio",
+            "varCategory": "Reparto",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso urbano",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MIDA_Ag",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Intermediate Cumulative Agricultural Loss",
+            "varCategory": "Allocation",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer for agricultural use",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Agrícola Acumulativa en la Mesilla Intermedia",
+            "varCategory": "Reparto",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso agrícola",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MIDA_Recharge",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Intermediate Cumulative Recharge",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual water recharge to the Mesilla intermediate and deep depth aquifer",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Recarga Acumulativa en la Mesilla Intermedia",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Recarga anual de agua al acuífero de la Mesilla a nivel profundo e intermedio",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "HB_Cum_Loss",
+        "varinfo": [
+          {
+            "varLabel": "Hueco Bolson Total Cumulative Loss",
+            "varCategory": "Storage",
+            "lang": "en-us",
+            "varDescription": "Total consumptive water use from the Hueco Bolson aquifer from both urban and agricultural sectors",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Total Acumulativa en Bolson del Hueco",
+            "varCategory": "Almacenamiento",
+            "lang": "es-mx",
+            "varDescription": "Consumo total de agua proveniente del Bolsón del Hueco para uso urbano y agrícola",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "HB_Urban_Cum",
+        "varinfo": [
+          {
+            "varLabel": "Hueco Bolson Urban Cumulative Loss",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Hueco Bolson aquifer  for urban use",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Perdida Cumulativa en el Bolson del Hueco por uso Urbano",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del Bolsón del hueco para uso urbano",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "HB_Ag_Cum",
+        "varinfo": [
+          {
+            "varLabel": "Hueco Bolson Agricultural Cumulative Loss",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual consumptive use of water from the Hueco Bolson aquifer for agricultural use",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Pérdida Agrícola Acumulativa del Bolson del Hueco",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Consumo anual de agua proveniente del Bolsón del Hueco para uso agrícola ",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "EB_Storage",
+        "varBenchMarks": [
+          {
+            "benchmarkLabel": "Elephant Butte Storage Calendar Year Average (1964-2013)",
+            "benchmarkLang": "en-us",
+            "benchmarkDescription": "Calendar year average storage volume at Elephant Butte Reservoir from 1964 to 2013 in acre-feet",
+            "benchmarkSource": "D.Gutzler (UNM)",
+            "benchmarkValue": 874570
+          },
+          {
+            "benchmarkLabel": "Storage Capacity",
+            "benchmarkLang": "en-us",
+            "benchmarkDescription": "Maximum storage volume capacity at Elephant Butte Reservoir in acre-feet",
+            "benchmarkSource": "https://en.wikipedia.org/wiki/Elephant_Butte_Reservoir",
+            "benchmarkValue": 1990000
+          },
+          {
+            "benchmarkLabel": "Capacidad de Almacenamiento",
+            "benchmarkLang": "es-mx",
+            "benchmarkDescription": "Volumen de agua máximo que puede ser almacenado en la presa del Elefante Butte dado en acre-pies",
+            "benchmarkSource": "https://en.wikipedia.org/wiki/Elephant_Butte_Reservoir",
+            "benchmarkValue": 1990000
+          },
+          {
+            "benchmarkLabel": "Promedio de Agua Almacenada (1964-2013)",
+            "benchmarkLang": "es-mx",
+            "benchmarkDescription": "Promedio en el volumen de agua almacenada en la presa del Elefante Butte durante periodos anuales desde 1964 a 2013 dado en acre-pies",
+            "benchmarkSource": "D.Gutzler (UNM)",
+            "benchmarkValue": 874570
+          }
+        ],
+        "varinfo": [
+          {
+            "varLabel": "Elephant Butte Reservoir Storage",
+            "varCategory": "Storage",
+            "lang": "en-us",
+            "varDescription": "Projected volume of surface water stored in Elephant Butte reservoir by the end of each year",
+            "varUnit": "Acre-Feet"
+          },
+          {
+            "varLabel": "Almacenamiento en Presa del Elefante Butte",
+            "varCategory": "Almacenamiento",
+            "lang": "es-mx",
+            "varDescription": "Volumen proyectado de agua superficial almacenado en la presa del Elefante Butte al final de cada año",
+            "varUnit": "Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "MAA_Cum_Loss",
+        "varinfo": [
+          {
+            "varLabel": "Mesilla Alluvial Total Cumulative Loss",
+            "varCategory": "Storage",
+            "lang": "en-us",
+            "varDescription": "Total consumptive water use from the Mesilla shallow depth aquifer from both urban and agricultural sectors",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Mesilla Aluvial Pérdida total acumulativa",
+            "varCategory": "Almacenamiento",
+            "lang": "es-mx",
+            "varDescription": "Consumo total de agua proveniente del acuífero de la Mesilla poco profundo para uso urbano y agrícola",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "HB_Recharge_Cum",
+        "varinfo": [
+          {
+            "varLabel": "Hueco Bolson Cumulative Recharge",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual  water recharge to the Hueco Bolson",
+            "varUnit": "Thousands of Acre-Feet"
+          },
+          {
+            "varLabel": "Recarga Acumulativa en el Bolson del Hueco",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Recarga anual de agua al Bolsón del Hueco",
+            "varUnit": "Miles de Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "Cab_Release",
+        "varinfo": [
+          {
+            "varLabel": "Caballo Reservoir Releases",
+            "varCategory": "Flows",
+            "lang": "en-us",
+            "varDescription": "Annual surface water volume released for regional consumption from Caballo  Reservoir located upstream of the city of Las Cruces and the Elephant Butte irrigation district, release volumes are directed by the 2008 Rio Grande Project Operating Agreement",
+            "varUnit": "Acre-Feet"
+          },
+          {
+            "varLabel": "Salidas de Caballo",
+            "varCategory": "Flujos",
+            "lang": "es-mx",
+            "varDescription": "Volumen anual de agua superficial extraída para consumo regional desde la presa del Caballo ubicada rio arriba de la ciudad de Las Cruces y el distrito de irrigación de Elefante Butte, los volúmenes de extracción conforme al Acuerdo de Operacion del Proyecto del Rio Bravo del 2008",
+            "varUnit": "Acre-Pies"
+          }
+        ]
+      },
+      {
+        "modelID": "5d76cc181328534d8cb7d17c",
+        "varName": "Full_Allocation_AF",
+        "varinfo": [
+          {
+            "varLabel": "Full Allocation",
+            "varCategory": "Allocation",
+            "lang": "en-us",
+            "varDescription": "Full allocation from Caballo Reservor to downstream users according to the 2008 Rio Grande Project Operating Agreement",
+            "varUnit": "Acre-Feet"
+          },
+          {
+            "varLabel": "Asignación completa",
+            "varCategory": "Reparto",
+            "lang": "es-mx",
+            "varDescription": "Asignación completa de agua de la presa El Caballo a los usuarios rio abajo conforme al Acuerdo de Operación del Proyecto del Rio Bravo del 2008",
+            "varUnit": "Acre-Pies"
+          }
+        ]
+      }
+    ],
+    "start": "1950"
+  }

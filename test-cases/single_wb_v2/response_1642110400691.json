@@ -1,0 +1,7111 @@
+{
+  "description": "Automated workflow scenario derived from workflow id bb350d6e-0464-4b18-a3e2-ea70f8b5030b",
+  "id": "ad861c26-822d-4cc0-b40c-36c4aacf20ad",
+  "isPublic": true,
+  "modelInputs": [
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 2098,
+      "minValue": 1950,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 1950,
+      "paramName": "StartYearV2",
+      "paramValue": 1994,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Starting year of simulation run",
+          "paramLabel": "Starting Year",
+          "paramUnit": "year"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Año Inicial de la ejecucion del modelo",
+          "paramLabel": "Año Inicial",
+          "paramUnit": "año"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 2099,
+      "minValue": 1951,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 2099,
+      "paramName": "EndYearV2",
+      "paramValue": 2033,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Ending year of simulation run",
+          "paramLabel": "Ending Year",
+          "paramUnit": "year"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Año final de la ejecucion del modelo",
+          "paramLabel": "Ultimo Año",
+          "paramUnit": "año"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 1990000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 415000,
+      "paramName": "EBInitStorageV2",
+      "paramValue": 415000,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Elephant Butte Storage on Starting Year",
+          "paramLabel": "Initial EB Storage Volume",
+          "paramUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Volumen inicial de agua en la presa del Elefante Butte",
+          "paramLabel": "Almacenamiento Inicial en presa del Elefante Butte ",
+          "paramUnit": "Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 343990,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 57420,
+      "paramName": "CabInitStorageV2",
+      "paramValue": 57420,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Caballo Reservoir Storage on Starting Year",
+          "paramLabel": "Initial Caballo Storage Volume",
+          "paramUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Volumen de agua almacenada en el año inicial de la simulacion",
+          "paramLabel": "Almacenamiento Inicial en Presa Caballo",
+          "paramUnit": "Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 790000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Rio Grande Project Operating Agreement 2008",
+      "paramDefaultValue": 790000,
+      "paramName": "FullAllocationV2",
+      "paramValue": 790000,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Full allocation of water to be released from Caballo for downstream water users as defined by the Rio Grande Project Operating Agreement 2008",
+          "paramLabel": "Full Allocation",
+          "paramUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Demanda completa de agua a ser liberada de la presa El Caballo para usuarios rio abajo, definido por el trataddo de operaciones del 2008.",
+          "paramLabel": "Demanda Anual",
+          "paramUnit": "Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 0.01,
+      "paramName": "RunoffCoeffV2",
+      "paramValue": 0.01,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Proportion of precipitation on land that ultimately reaches streams often with dissolved or suspended material",
+          "paramLabel": "Runoff coefficient",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Proporción de precipitación en tierra que finalmente llega a los arroyos a menudo con material disuelto o suspendido",
+          "paramLabel": "Coeficiente de escurrimiento",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 1990000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 17300,
+      "paramName": "EBMinV2",
+      "paramValue": 17300,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Elephant Butte reservoir minimum storage volume",
+          "paramLabel": "EB Minimum Storage",
+          "paramUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Volumen de almacenamiento minimo en presa del Elefante Butte",
+          "paramLabel": "Almacenamiento Minimo en Elefante Butte",
+          "paramUnit": "Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1990000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 1990000,
+      "paramName": "EBMaxV2",
+      "paramValue": 1990000,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Elephant Butte Maximum storage volume",
+          "paramLabel": "EB Maximum Storage",
+          "paramUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Volumen maximo de agua que puede almacenar la presa del Elefante Butte",
+          "paramLabel": "Capacidad Maxima de Elefante Butte",
+          "paramUnit": "Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 20000000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 875000,
+      "paramName": "OPConst1V2",
+      "paramValue": 875000,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Policy",
+          "paramDescription": "Maximum desired reservoir release volume",
+          "paramLabel": "Maximum Release Volume OP #1",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Politicas",
+          "paramDescription": "Volumen maximo de liberacion de la presa",
+          "paramLabel": "Volumen Maximo de Liberacion OP #1",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 0.56708,
+      "paramName": "OPConst2V2",
+      "paramValue": 0.56708,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Policy",
+          "paramDescription": "Percent of San Marcial flow that will be released in low volume years when the maxium desired reservoir release volume is not possible",
+          "paramLabel": "Operating Agreement Coefficient #2",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Politicas",
+          "paramDescription": "Proporcion de flujos en San Marcial que seran liberados en periodos de bajo volumen cuando el volumen maximo deseado no es posible",
+          "paramLabel": "Coeficiente en Acuerdo de Operacion #2",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 0.46873,
+      "paramName": "OPConst3V2",
+      "paramValue": 0.46873,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Policy",
+          "paramDescription": "Percent of previous year's reservoir volume to be released in low volume years when the maxium desired reservoir release volume is not possible",
+          "paramLabel": "Operating Agreement Coefficient #3",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Politicas",
+          "paramDescription": "Porcentaje de volumen de la presa del periodo anterior a ser liberado en periodos de bajo volumen, cuando el maximo deseado no es posible",
+          "paramLabel": "Coeficiente en Acuerdo de Operacion #3",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 32,
+      "paramName": "EvapCoeffV2",
+      "paramValue": 32,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Evaporation coefficient for future projections",
+          "paramLabel": "Future Evaporation Coefficient",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Coeficiente de evaporación para projecciones futuras",
+          "paramLabel": "Coeficiente de Evaporación Futura",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 0,
+      "paramName": "EvapIntV2",
+      "paramValue": 0,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "General",
+          "paramDescription": "Evaporation intercept",
+          "paramLabel": "Evaporation intercept",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "General",
+          "paramDescription": "Intercepción de Evaporación",
+          "paramLabel": "Intercepción de Evaporación",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1000000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 793751,
+      "paramName": "CabLandAreaV2",
+      "paramValue": 793751,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Land drainage area for El Caballo Reservoir",
+          "paramLabel": "Caballo Watershed Area",
+          "paramUnit": "Acres"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Superficie de la cuenca de drenaje en la presa El Caballo",
+          "paramLabel": "Superficie de Cuenca El Caballo",
+          "paramUnit": "Acres"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100000000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 1400469,
+      "paramName": "EBLandAreaV2",
+      "paramValue": 1400469,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Land drainage area for Elephant Butte Reservoir",
+          "paramLabel": "Elephant Butte Watershed Area",
+          "paramUnit": "Acres"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Superficie de la cuenca de drenaje en la presa del Elefante Butte",
+          "paramLabel": "Superficie de Cuenca Elefante Butte",
+          "paramUnit": "Acres"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 11.8621212600072,
+      "paramName": "HistoricTasV2",
+      "paramValue": 11.8621212600072,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average historical temperature at Elephant Butte reservoir between 1950 and 1999",
+          "paramLabel": "Average Temperature at Elephant Butte",
+          "paramUnit": "Celsius"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Temperatura historica promedio en la presa del Elefante Butte entre 1950 y 1999",
+          "paramLabel": "Temperatura Promedio en Elefante Butte",
+          "paramUnit": "Centigrados"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 5000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 1354.6,
+      "paramName": "HistoricEvapV2",
+      "paramValue": 1354.6,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average historical evaporation at Elephant Butte reservoir between 1950 and 1999",
+          "paramLabel": "Average Evaporation at Elephant Butte",
+          "paramUnit": "Millimetres"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Evaporación historica promedio en la presa del Elefante Butte entre 1950 y 1999",
+          "paramLabel": "Evaporación Promedio en Elefante Butte",
+          "paramUnit": "Milimetros"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Ahadi, R., Samani, Z. and Skaggs, R., 2013. Evaluating on-farm irrigation efficiency across the watershed: A case study of New Mexico's Lower Rio Grande Basin. Agricultural water management, 124, pp.52-57.",
+      "paramDefaultValue": 0.64,
+      "paramName": "MAARechargeCoeffArtV2",
+      "paramValue": 0.64,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Return flow coefficient for surface water for agricultural use in Mesilla Alluvial aquifer",
+          "paramLabel": "MAA Recharge Coefficient",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Coeficiente de recarga para agua superficiasl para uso agricola en el acuifero de la Mesilla Aluvial",
+          "paramLabel": "Coeficiente de Recarga MAA",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Historical average 1994-2013",
+      "paramDefaultValue": 0.92,
+      "paramName": "MIDAFractionUrbanV2",
+      "paramValue": 0.92,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Mesilla Intermediate-Deep Aquifer proportion allocated for the urban sector",
+          "paramLabel": "Urban Fraction from MIDA",
+          "paramUnit": "percent"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Proporcion de agua del acuifero de la Mesilla a nivel intermedio-profundo para el sector urbano",
+          "paramLabel": "Fraccion Urbana desde MIDA",
+          "paramUnit": "porcentaje"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Historical average 1994-2013",
+      "paramDefaultValue": 0.08,
+      "paramName": "MIDAFractionAgV2",
+      "paramValue": 0.08,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Mesilla Intermediate-Deep Aquifer proportion allocated for the agricultural sector",
+          "paramLabel": "Agricultural Fraction from MIDA",
+          "paramUnit": "percent"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Proporcion de agua del acuifero de la Mesilla a nivel intermedio-profundo para el sector agricola",
+          "paramLabel": "Fraccion agricola desde MIDA",
+          "paramUnit": "porcentaje"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 200,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 194,
+      "paramName": "HBUrbBaselineV2",
+      "paramValue": 194,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Base Water allocation from Hueco Bolson to the urban sector",
+          "paramLabel": "Base Urban + Other Allocation from Hueco Bolson",
+          "paramUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Reparto base de agua desde el Bolson del Hueco hacia el sector urbano",
+          "paramLabel": "Reparto Base Urbano + Otros desde el Bolson del Hueco",
+          "paramUnit": "Miles de Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 28,
+      "paramName": "HBAgBaselineV2",
+      "paramValue": 28,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Base Water allocation from Hueco Bolson to the agricultural sector",
+          "paramLabel": "Base Agriculture Allocation from Hueco Bolson",
+          "paramUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Reparto base de agua desde el Bolson del Hueco hacia el sector agrícola",
+          "paramLabel": "Reparto Base Agrícola desde el Bolson del Hueco",
+          "paramUnit": "Miles de Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": 0.51,
+      "paramName": "HBUnderallocFractionV2",
+      "paramValue": 0.51,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Proportion of underllocation at the Hueco Bolson",
+          "paramLabel": "HB Fraction of Underallocation",
+          "paramUnit": "percent"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Porporcion de subasignacion en el Bolson del Hueco",
+          "paramLabel": "Fraccion de Subasignacion en el Bolson del Hueco",
+          "paramUnit": "porcentaje"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Historical average 1994-2013",
+      "paramDefaultValue": 1,
+      "paramName": "HBUnderallocUrbanFracV2",
+      "paramValue": 1,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Fraction of underallocation of surface water replaced with groundwater for urban use from Hueco Bolson aquifer",
+          "paramLabel": "HB Urban + Other Fraction of Underallocation",
+          "paramUnit": "percent"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Fraccion de subasigancion de agua superficial reemplazada por agua subterranea para uso en el sector urbano del Bolson del Hueco",
+          "paramLabel": "HB Fraccion de Subasignacion Urbano",
+          "paramUnit": "porcentaje"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Historical average 1994-2013",
+      "paramDefaultValue": 0.8,
+      "paramName": "HBUnderallocAgFracV2",
+      "paramValue": 0.8,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Fraction of underallocation of surface water replaced with groundwater overall from Hueco Bolson aquiferr",
+          "paramLabel": "HB Agricultural + Other Fraction of Underallocation",
+          "paramUnit": "percent"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Proporcion de subasigancion de agua superficial remplazada por agua subterranea para uso agricola en el Bolson del Hueco",
+          "paramLabel": "HB Agricola + Otra Subasignacion Agricola",
+          "paramUnit": "porcentaje"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Historical average 1994-2013",
+      "paramDefaultValue": 95,
+      "paramName": "HBSWIrrBaselineV2",
+      "paramValue": 95,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Allocation",
+          "paramDescription": "Baseline volume of water extracted from Hueco Bolson for surface irrigation",
+          "paramLabel": "HB Surface Irrigation Baseline",
+          "paramUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Reparto",
+          "paramDescription": "Volumen base de agua para irrigacion superficial del Bolson del Hueco",
+          "paramLabel": "Base para Irrigacion Superficial del Bolson del Hueco",
+          "paramUnit": "Miles de Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 1,
+      "minValue": -1,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Ahadi, R., Samani, Z. and Skaggs, R., 2013. Evaluating on-farm irrigation efficiency across the watershed: A case study of New Mexico's Lower Rio Grande Basin. Agricultural water management, 124, pp.52-57.",
+      "paramDefaultValue": 0.36,
+      "paramName": "HBRFCoeffV2",
+      "paramValue": 0.36,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Return flow coefficient for pumping for agricultural use in Hueco Bolson aquifer",
+          "paramLabel": "HB RF Coefficient",
+          "paramUnit": "n/a"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Cieficiente de recarga en bombeo en el Bolson del Hueco para uso agricola",
+          "paramLabel": "Coeficiente de RF en HB",
+          "paramUnit": "n/a"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "scenario",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "Sheng, Z., 2013. Impacts of groundwater pumping and climate variability on groundwater availability in the Rio Grande Basin. Ecosphere, 4(1), pp.1-25.",
+      "paramDefaultValue": 16,
+      "paramName": "HBNetRechargeV2",
+      "paramValue": 16,
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Storage",
+          "paramDescription": "Hueco Bolson aquifer natural water recharge",
+          "paramLabel": "HB Net Recharge",
+          "paramUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Almacenamiento",
+          "paramDescription": "Recarga de agua natural en el Bolson del Hueco",
+          "paramLabel": "Recarga Neta en HB",
+          "paramUnit": "Miles de Acre-Pies"
+        }
+      ],
+      "structType": "scalar"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 10000000,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [
+        {
+          "benchmarkDescription": "Temporal mean of combined San Marcial gauges from 1964 to 2013 in cfs",
+          "benchmarkLabel": "San Marcial Mean Flows (1964-2013)",
+          "benchmarkLang": "en-us",
+          "benchmarkSource": "D. Gutzler (UNM)",
+          "benchmarkValue": 1053
+        },
+        {
+          "benchmarkDescription": "Temporal mean of combined San Marcial gauges from 1994 to 2013 in cfs",
+          "benchmarkLabel": "San Marcial Mean Flows (1994-2013)",
+          "benchmarkLang": "en-us",
+          "benchmarkSource": "D. Gutzler (UNM)",
+          "benchmarkValue": 871
+        },
+        {
+          "benchmarkDescription": "Promedio temporal de la combinacion de  flujos en San Marcial desde 1994 a 2013 en pies cubicos por segundo",
+          "benchmarkLabel": "Flujos Promedio en San Marcial (1994-2013)",
+          "benchmarkLang": "es-mx",
+          "benchmarkSource": "D. Gutzler (UNM)",
+          "benchmarkValue": 871
+        },
+        {
+          "benchmarkDescription": "Promedio temporal de la combinacion de  flujos en San Marcial desde 1964 a 2013 en pies cubicos por segundo",
+          "benchmarkLabel": "Flujos Promedio en San Marcial (1964-2013)",
+          "benchmarkLang": "es-mx",
+          "benchmarkSource": "D. Gutzler (UNM)",
+          "benchmarkValue": 1053
+        }
+      ],
+      "paramDefaultSource": "Townsend, N.T., and D.S. Gutzler, 2020: Adaptation of climate model projections of streamflow to account for anthropogenic flow impairments. Journal of the American Water Resources Association (JAWRA).",
+      "paramDefaultValue": [
+        {
+          "t": 1950,
+          "value": 351.59546563915
+        },
+        {
+          "t": 1951,
+          "value": 540.756828929742
+        },
+        {
+          "t": 1952,
+          "value": 613.025645051452
+        },
+        {
+          "t": 1953,
+          "value": 781.853415870082
+        },
+        {
+          "t": 1954,
+          "value": 564.065474690757
+        },
+        {
+          "t": 1955,
+          "value": 711.752785848081
+        },
+        {
+          "t": 1956,
+          "value": 634.914129442786
+        },
+        {
+          "t": 1957,
+          "value": 1251.85630091143
+        },
+        {
+          "t": 1958,
+          "value": 601.821669328298
+        },
+        {
+          "t": 1959,
+          "value": 524.559539334579
+        },
+        {
+          "t": 1960,
+          "value": 879.887780029244
+        },
+        {
+          "t": 1961,
+          "value": 2208.69365905021
+        },
+        {
+          "t": 1962,
+          "value": 1083.23141036902
+        },
+        {
+          "t": 1963,
+          "value": 3497.26349927331
+        },
+        {
+          "t": 1964,
+          "value": 822.449520246125
+        },
+        {
+          "t": 1965,
+          "value": 921.752806154145
+        },
+        {
+          "t": 1966,
+          "value": 656.727098811046
+        },
+        {
+          "t": 1967,
+          "value": 478.469689556661
+        },
+        {
+          "t": 1968,
+          "value": 742.300306848042
+        },
+        {
+          "t": 1969,
+          "value": 1032.74469786072
+        },
+        {
+          "t": 1970,
+          "value": 657.067744593218
+        },
+        {
+          "t": 1971,
+          "value": 427.571358338445
+        },
+        {
+          "t": 1972,
+          "value": 940.008043317288
+        },
+        {
+          "t": 1973,
+          "value": 1470.7763190853
+        },
+        {
+          "t": 1974,
+          "value": 1531.77953640232
+        },
+        {
+          "t": 1975,
+          "value": 602.157140530333
+        },
+        {
+          "t": 1976,
+          "value": 2207.57744704234
+        },
+        {
+          "t": 1977,
+          "value": 1185.32364054377
+        },
+        {
+          "t": 1978,
+          "value": 3080.15524456556
+        },
+        {
+          "t": 1979,
+          "value": 2817.13338258623
+        },
+        {
+          "t": 1980,
+          "value": 754.887845888074
+        },
+        {
+          "t": 1981,
+          "value": 1079.56259057092
+        },
+        {
+          "t": 1982,
+          "value": 1525.51641768736
+        },
+        {
+          "t": 1983,
+          "value": 1380.50251882731
+        },
+        {
+          "t": 1984,
+          "value": 851.701501629934
+        },
+        {
+          "t": 1985,
+          "value": 472.539754566247
+        },
+        {
+          "t": 1986,
+          "value": 586.758431292672
+        },
+        {
+          "t": 1987,
+          "value": 1671.40814027099
+        },
+        {
+          "t": 1988,
+          "value": 2806.01579725722
+        },
+        {
+          "t": 1989,
+          "value": 1785.03829461427
+        },
+        {
+          "t": 1990,
+          "value": 529.399899197837
+        },
+        {
+          "t": 1991,
+          "value": 443.641171713544
+        },
+        {
+          "t": 1992,
+          "value": 410.880159878605
+        },
+        {
+          "t": 1993,
+          "value": 448.002268489686
+        },
+        {
+          "t": 1994,
+          "value": 587.385711027487
+        },
+        {
+          "t": 1995,
+          "value": 466.583947792328
+        },
+        {
+          "t": 1996,
+          "value": 599.257447981174
+        },
+        {
+          "t": 1997,
+          "value": 490.083169413527
+        },
+        {
+          "t": 1998,
+          "value": 790.40994181421
+        },
+        {
+          "t": 1999,
+          "value": 2016.4703613203
+        },
+        {
+          "t": 2000,
+          "value": 5313.99499974186
+        },
+        {
+          "t": 2001,
+          "value": 1707.59778593252
+        },
+        {
+          "t": 2002,
+          "value": 573.37915323827
+        },
+        {
+          "t": 2003,
+          "value": 418.678461398382
+        },
+        {
+          "t": 2004,
+          "value": 3740.39269076466
+        },
+        {
+          "t": 2005,
+          "value": 1273.12959587067
+        },
+        {
+          "t": 2006,
+          "value": 883.206410959868
+        },
+        {
+          "t": 2007,
+          "value": 1769.73247000189
+        },
+        {
+          "t": 2008,
+          "value": 443.8364077748
+        },
+        {
+          "t": 2009,
+          "value": 326.588177971756
+        },
+        {
+          "t": 2010,
+          "value": 759.364799131783
+        },
+        {
+          "t": 2011,
+          "value": 563.906011567625
+        },
+        {
+          "t": 2012,
+          "value": 451.057362280064
+        },
+        {
+          "t": 2013,
+          "value": 774.022746039867
+        },
+        {
+          "t": 2014,
+          "value": 1011.12820458707
+        },
+        {
+          "t": 2015,
+          "value": 929.10014980213
+        },
+        {
+          "t": 2016,
+          "value": 407.666922534351
+        },
+        {
+          "t": 2017,
+          "value": 703.520736926874
+        },
+        {
+          "t": 2018,
+          "value": 1033.45827079187
+        },
+        {
+          "t": 2019,
+          "value": 1809.08189518409
+        },
+        {
+          "t": 2020,
+          "value": 297.245716259249
+        },
+        {
+          "t": 2021,
+          "value": 967.904235017974
+        },
+        {
+          "t": 2022,
+          "value": 1127.18302082094
+        },
+        {
+          "t": 2023,
+          "value": 653.879858704369
+        },
+        {
+          "t": 2024,
+          "value": 448.285076404832
+        },
+        {
+          "t": 2025,
+          "value": 567.729543805746
+        },
+        {
+          "t": 2026,
+          "value": 664.265778457574
+        },
+        {
+          "t": 2027,
+          "value": 631.010183160883
+        },
+        {
+          "t": 2028,
+          "value": 953.16369236132
+        },
+        {
+          "t": 2029,
+          "value": 978.445129297404
+        },
+        {
+          "t": 2030,
+          "value": 422.715012210309
+        },
+        {
+          "t": 2031,
+          "value": 380.196141291676
+        },
+        {
+          "t": 2032,
+          "value": 1191.4619785126
+        },
+        {
+          "t": 2033,
+          "value": 604.253216208612
+        },
+        {
+          "t": 2034,
+          "value": 549.061401326843
+        },
+        {
+          "t": 2035,
+          "value": 637.246799820066
+        },
+        {
+          "t": 2036,
+          "value": 400.340366892845
+        },
+        {
+          "t": 2037,
+          "value": 419.298799639032
+        },
+        {
+          "t": 2038,
+          "value": 682.14621486742
+        },
+        {
+          "t": 2039,
+          "value": 568.017523464813
+        },
+        {
+          "t": 2040,
+          "value": 363.164652057211
+        },
+        {
+          "t": 2041,
+          "value": 562.237742236947
+        },
+        {
+          "t": 2042,
+          "value": 822.963656758262
+        },
+        {
+          "t": 2043,
+          "value": 1123.49743163744
+        },
+        {
+          "t": 2044,
+          "value": 1492.2943385932
+        },
+        {
+          "t": 2045,
+          "value": 452.554855616082
+        },
+        {
+          "t": 2046,
+          "value": 480.672991510445
+        },
+        {
+          "t": 2047,
+          "value": 445.684597131422
+        },
+        {
+          "t": 2048,
+          "value": 481.874611258853
+        },
+        {
+          "t": 2049,
+          "value": 428.153210945385
+        },
+        {
+          "t": 2050,
+          "value": 510.090227175029
+        },
+        {
+          "t": 2051,
+          "value": 531.169119907112
+        },
+        {
+          "t": 2052,
+          "value": 449.684020231955
+        },
+        {
+          "t": 2053,
+          "value": 406.40943012387
+        },
+        {
+          "t": 2054,
+          "value": 460.940726538068
+        },
+        {
+          "t": 2055,
+          "value": 987.038491842997
+        },
+        {
+          "t": 2056,
+          "value": 2475.2798955219
+        },
+        {
+          "t": 2057,
+          "value": 1496.84762307497
+        },
+        {
+          "t": 2058,
+          "value": 441.505925955849
+        },
+        {
+          "t": 2059,
+          "value": 584.85400643907
+        },
+        {
+          "t": 2060,
+          "value": 316.069764867234
+        },
+        {
+          "t": 2061,
+          "value": 241.6877229431
+        },
+        {
+          "t": 2062,
+          "value": 343.066634129113
+        },
+        {
+          "t": 2063,
+          "value": 781.88556445081
+        },
+        {
+          "t": 2064,
+          "value": 1195.49135950667
+        },
+        {
+          "t": 2065,
+          "value": 519.771012820933
+        },
+        {
+          "t": 2066,
+          "value": 632.041932585485
+        },
+        {
+          "t": 2067,
+          "value": 732.125998453029
+        },
+        {
+          "t": 2068,
+          "value": 539.413259449577
+        },
+        {
+          "t": 2069,
+          "value": 352.347995221247
+        },
+        {
+          "t": 2070,
+          "value": 480.458321409584
+        },
+        {
+          "t": 2071,
+          "value": 580.392465175291
+        },
+        {
+          "t": 2072,
+          "value": 439.101246699512
+        },
+        {
+          "t": 2073,
+          "value": 603.85348466086
+        },
+        {
+          "t": 2074,
+          "value": 669.634289157094
+        },
+        {
+          "t": 2075,
+          "value": 1511.70908452718
+        },
+        {
+          "t": 2076,
+          "value": 589.971853782299
+        },
+        {
+          "t": 2077,
+          "value": 622.712355810815
+        },
+        {
+          "t": 2078,
+          "value": 1085.90806405811
+        },
+        {
+          "t": 2079,
+          "value": 979.607184814225
+        },
+        {
+          "t": 2080,
+          "value": 492.780946712287
+        },
+        {
+          "t": 2081,
+          "value": 417.127673586251
+        },
+        {
+          "t": 2082,
+          "value": 461.049625609306
+        },
+        {
+          "t": 2083,
+          "value": 560.144951363872
+        },
+        {
+          "t": 2084,
+          "value": 598.800026753726
+        },
+        {
+          "t": 2085,
+          "value": 410.946500165242
+        },
+        {
+          "t": 2086,
+          "value": 1052.48123931381
+        },
+        {
+          "t": 2087,
+          "value": 358.237555334983
+        },
+        {
+          "t": 2088,
+          "value": 364.88802713851
+        },
+        {
+          "t": 2089,
+          "value": 385.196733218469
+        },
+        {
+          "t": 2090,
+          "value": 328.193349552915
+        },
+        {
+          "t": 2091,
+          "value": 304.294300714292
+        },
+        {
+          "t": 2092,
+          "value": 435.582485552088
+        },
+        {
+          "t": 2093,
+          "value": 408.638653618881
+        },
+        {
+          "t": 2094,
+          "value": 336.684486735036
+        },
+        {
+          "t": 2095,
+          "value": 978.214430383591
+        },
+        {
+          "t": 2096,
+          "value": 343.481834128055
+        },
+        {
+          "t": 2097,
+          "value": 424.703737040803
+        },
+        {
+          "t": 2098,
+          "value": 397.500286779492
+        },
+        {
+          "t": 2099,
+          "value": 385.695727899222
+        }
+      ],
+      "paramName": "SanMarV2_cfs",
+      "paramValue": [
+        {
+          "t": 1994,
+          "value": 587.385711027487
+        },
+        {
+          "t": 1995,
+          "value": 466.583947792328
+        },
+        {
+          "t": 1996,
+          "value": 599.257447981174
+        },
+        {
+          "t": 1997,
+          "value": 490.083169413527
+        },
+        {
+          "t": 1998,
+          "value": 790.40994181421
+        },
+        {
+          "t": 1999,
+          "value": 2016.4703613203
+        },
+        {
+          "t": 2000,
+          "value": 5313.99499974186
+        },
+        {
+          "t": 2001,
+          "value": 1707.59778593252
+        },
+        {
+          "t": 2002,
+          "value": 573.37915323827
+        },
+        {
+          "t": 2003,
+          "value": 418.678461398382
+        },
+        {
+          "t": 2004,
+          "value": 3740.39269076466
+        },
+        {
+          "t": 2005,
+          "value": 1273.12959587067
+        },
+        {
+          "t": 2006,
+          "value": 883.206410959868
+        },
+        {
+          "t": 2007,
+          "value": 1769.73247000189
+        },
+        {
+          "t": 2008,
+          "value": 443.8364077748
+        },
+        {
+          "t": 2009,
+          "value": 326.588177971756
+        },
+        {
+          "t": 2010,
+          "value": 759.364799131783
+        },
+        {
+          "t": 2011,
+          "value": 563.906011567625
+        },
+        {
+          "t": 2012,
+          "value": 451.057362280064
+        },
+        {
+          "t": 2013,
+          "value": 774.022746039867
+        },
+        {
+          "t": 2014,
+          "value": 1011.12820458707
+        },
+        {
+          "t": 2015,
+          "value": 929.10014980213
+        },
+        {
+          "t": 2016,
+          "value": 407.666922534351
+        },
+        {
+          "t": 2017,
+          "value": 703.520736926874
+        },
+        {
+          "t": 2018,
+          "value": 1033.45827079187
+        },
+        {
+          "t": 2019,
+          "value": 1809.08189518409
+        },
+        {
+          "t": 2020,
+          "value": 297.245716259249
+        },
+        {
+          "t": 2021,
+          "value": 967.904235017974
+        },
+        {
+          "t": 2022,
+          "value": 1127.18302082094
+        },
+        {
+          "t": 2023,
+          "value": 653.879858704369
+        },
+        {
+          "t": 2024,
+          "value": 448.285076404832
+        },
+        {
+          "t": 2025,
+          "value": 567.729543805746
+        },
+        {
+          "t": 2026,
+          "value": 664.265778457574
+        },
+        {
+          "t": 2027,
+          "value": 631.010183160883
+        },
+        {
+          "t": 2028,
+          "value": 953.16369236132
+        },
+        {
+          "t": 2029,
+          "value": 978.445129297404
+        },
+        {
+          "t": 2030,
+          "value": 422.715012210309
+        },
+        {
+          "t": 2031,
+          "value": 380.196141291676
+        },
+        {
+          "t": 2032,
+          "value": 1191.4619785126
+        },
+        {
+          "t": 2033,
+          "value": 604.253216208612
+        }
+      ],
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Upstream Water supply to Elephant Butte Reservoir through San Marcial Gauges.",
+          "paramLabel": "Inflows at San Marcial Gauges",
+          "paramUnit": "cubic foot per second"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Suministro de agua a la Presa del Elefante atraves de San Marcial",
+          "paramLabel": "Suministro en San Marcial",
+          "paramUnit": "pies cubicos por segundo"
+        }
+      ],
+      "structDimension": "1",
+      "structType": "table"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": [
+        {
+          "t": 1950,
+          "value": 1.060566773542
+        },
+        {
+          "t": 1951,
+          "value": 1.164400099289
+        },
+        {
+          "t": 1952,
+          "value": 0.655878099236
+        },
+        {
+          "t": 1953,
+          "value": 0.981625365461
+        },
+        {
+          "t": 1954,
+          "value": 0.758238280083
+        },
+        {
+          "t": 1955,
+          "value": 0.955371691799
+        },
+        {
+          "t": 1956,
+          "value": 1.042052708443
+        },
+        {
+          "t": 1957,
+          "value": 0.922670898228
+        },
+        {
+          "t": 1958,
+          "value": 0.687721595457
+        },
+        {
+          "t": 1959,
+          "value": 1.113647378678
+        },
+        {
+          "t": 1960,
+          "value": 0.847855641492
+        },
+        {
+          "t": 1961,
+          "value": 1.153007029227
+        },
+        {
+          "t": 1962,
+          "value": 0.782438473539
+        },
+        {
+          "t": 1963,
+          "value": 1.053611843711
+        },
+        {
+          "t": 1964,
+          "value": 0.718735797782
+        },
+        {
+          "t": 1965,
+          "value": 1.06996667864
+        },
+        {
+          "t": 1966,
+          "value": 0.680645256658
+        },
+        {
+          "t": 1967,
+          "value": 0.710749150355
+        },
+        {
+          "t": 1968,
+          "value": 0.886675233214
+        },
+        {
+          "t": 1969,
+          "value": 0.844093100182
+        },
+        {
+          "t": 1970,
+          "value": 1.090718329423
+        },
+        {
+          "t": 1971,
+          "value": 0.765233455831
+        },
+        {
+          "t": 1972,
+          "value": 0.853523337793
+        },
+        {
+          "t": 1973,
+          "value": 1.243345824184
+        },
+        {
+          "t": 1974,
+          "value": 0.581833335198
+        },
+        {
+          "t": 1975,
+          "value": 0.921038399867
+        },
+        {
+          "t": 1976,
+          "value": 0.696848545897
+        },
+        {
+          "t": 1977,
+          "value": 0.751128201713
+        },
+        {
+          "t": 1978,
+          "value": 0.922971849241
+        },
+        {
+          "t": 1979,
+          "value": 0.938585106491
+        },
+        {
+          "t": 1980,
+          "value": 0.849882401902
+        },
+        {
+          "t": 1981,
+          "value": 1.280852262552
+        },
+        {
+          "t": 1982,
+          "value": 1.199570564184
+        },
+        {
+          "t": 1983,
+          "value": 0.778466973709
+        },
+        {
+          "t": 1984,
+          "value": 0.821139639388
+        },
+        {
+          "t": 1985,
+          "value": 0.755852864862
+        },
+        {
+          "t": 1986,
+          "value": 0.933394448107
+        },
+        {
+          "t": 1987,
+          "value": 1.201146242756
+        },
+        {
+          "t": 1988,
+          "value": 1.251931324335
+        },
+        {
+          "t": 1989,
+          "value": 0.79550638343
+        },
+        {
+          "t": 1990,
+          "value": 0.898262415475
+        },
+        {
+          "t": 1991,
+          "value": 0.482374312892
+        },
+        {
+          "t": 1992,
+          "value": 0.651155414485
+        },
+        {
+          "t": 1993,
+          "value": 1.012131986185
+        },
+        {
+          "t": 1994,
+          "value": 0.516911481381
+        },
+        {
+          "t": 1995,
+          "value": 1.005056371958
+        },
+        {
+          "t": 1996,
+          "value": 1.063998789594
+        },
+        {
+          "t": 1997,
+          "value": 0.977544468702
+        },
+        {
+          "t": 1998,
+          "value": 0.872895214057
+        },
+        {
+          "t": 1999,
+          "value": 1.615297571564
+        },
+        {
+          "t": 2000,
+          "value": 1.250277001581
+        },
+        {
+          "t": 2001,
+          "value": 0.87502609767
+        },
+        {
+          "t": 2002,
+          "value": 1.209982605051
+        },
+        {
+          "t": 2003,
+          "value": 1.076281643888
+        },
+        {
+          "t": 2004,
+          "value": 1.53530749998
+        },
+        {
+          "t": 2005,
+          "value": 0.469510703931
+        },
+        {
+          "t": 2006,
+          "value": 1.423239565033
+        },
+        {
+          "t": 2007,
+          "value": 0.716361568384
+        },
+        {
+          "t": 2008,
+          "value": 0.702842078602
+        },
+        {
+          "t": 2009,
+          "value": 1.02928881097
+        },
+        {
+          "t": 2010,
+          "value": 0.720878266109
+        },
+        {
+          "t": 2011,
+          "value": 0.890800707758
+        },
+        {
+          "t": 2012,
+          "value": 0.623364576876
+        },
+        {
+          "t": 2013,
+          "value": 1.231919891246
+        },
+        {
+          "t": 2014,
+          "value": 1.34520064209
+        },
+        {
+          "t": 2015,
+          "value": 0.858336297115
+        },
+        {
+          "t": 2016,
+          "value": 0.521687703158
+        },
+        {
+          "t": 2017,
+          "value": 1.172447071181
+        },
+        {
+          "t": 2018,
+          "value": 0.979656566782
+        },
+        {
+          "t": 2019,
+          "value": 0.593598799708
+        },
+        {
+          "t": 2020,
+          "value": 0.569152315497
+        },
+        {
+          "t": 2021,
+          "value": 0.833448782556
+        },
+        {
+          "t": 2022,
+          "value": 1.06014684833
+        },
+        {
+          "t": 2023,
+          "value": 0.758497710279
+        },
+        {
+          "t": 2024,
+          "value": 0.804914260637
+        },
+        {
+          "t": 2025,
+          "value": 1.123191540576
+        },
+        {
+          "t": 2026,
+          "value": 0.895251802236
+        },
+        {
+          "t": 2027,
+          "value": 1.085539435297
+        },
+        {
+          "t": 2028,
+          "value": 1.003982764828
+        },
+        {
+          "t": 2029,
+          "value": 0.498540775604
+        },
+        {
+          "t": 2030,
+          "value": 0.711965071113
+        },
+        {
+          "t": 2031,
+          "value": 0.87440771759
+        },
+        {
+          "t": 2032,
+          "value": 0.986394420547
+        },
+        {
+          "t": 2033,
+          "value": 0.874160170223
+        },
+        {
+          "t": 2034,
+          "value": 0.675024877351
+        },
+        {
+          "t": 2035,
+          "value": 1.145796340687
+        },
+        {
+          "t": 2036,
+          "value": 0.654936168874
+        },
+        {
+          "t": 2037,
+          "value": 0.962977815995
+        },
+        {
+          "t": 2038,
+          "value": 0.924420673252
+        },
+        {
+          "t": 2039,
+          "value": 0.584348077974
+        },
+        {
+          "t": 2040,
+          "value": 0.708081781343
+        },
+        {
+          "t": 2041,
+          "value": 0.669875252687
+        },
+        {
+          "t": 2042,
+          "value": 1.084164393045
+        },
+        {
+          "t": 2043,
+          "value": 1.289698658535
+        },
+        {
+          "t": 2044,
+          "value": 0.865035040223
+        },
+        {
+          "t": 2045,
+          "value": 0.636045960381
+        },
+        {
+          "t": 2046,
+          "value": 0.762808926485
+        },
+        {
+          "t": 2047,
+          "value": 0.719079947691
+        },
+        {
+          "t": 2048,
+          "value": 0.67166477628
+        },
+        {
+          "t": 2049,
+          "value": 0.768573827377
+        },
+        {
+          "t": 2050,
+          "value": 0.509849912779
+        },
+        {
+          "t": 2051,
+          "value": 0.565747073977
+        },
+        {
+          "t": 2052,
+          "value": 0.873150709969
+        },
+        {
+          "t": 2053,
+          "value": 0.736272493718
+        },
+        {
+          "t": 2054,
+          "value": 1.273690282116
+        },
+        {
+          "t": 2055,
+          "value": 0.973867007605
+        },
+        {
+          "t": 2056,
+          "value": 1.31059943171
+        },
+        {
+          "t": 2057,
+          "value": 1.021923531529
+        },
+        {
+          "t": 2058,
+          "value": 0.790271587812
+        },
+        {
+          "t": 2059,
+          "value": 0.786371090725
+        },
+        {
+          "t": 2060,
+          "value": 0.685063763161
+        },
+        {
+          "t": 2061,
+          "value": 0.871156051111
+        },
+        {
+          "t": 2062,
+          "value": 0.929287016037
+        },
+        {
+          "t": 2063,
+          "value": 0.563424336221
+        },
+        {
+          "t": 2064,
+          "value": 0.927033912499
+        },
+        {
+          "t": 2065,
+          "value": 0.860424610544
+        },
+        {
+          "t": 2066,
+          "value": 0.912581159172
+        },
+        {
+          "t": 2067,
+          "value": 1.359587275297
+        },
+        {
+          "t": 2068,
+          "value": 0.773810186527
+        },
+        {
+          "t": 2069,
+          "value": 1.149372904211
+        },
+        {
+          "t": 2070,
+          "value": 0.793897894759
+        },
+        {
+          "t": 2071,
+          "value": 0.850887670972
+        },
+        {
+          "t": 2072,
+          "value": 0.587856038799
+        },
+        {
+          "t": 2073,
+          "value": 1.105669697524
+        },
+        {
+          "t": 2074,
+          "value": 0.862542808217
+        },
+        {
+          "t": 2075,
+          "value": 0.865896757027
+        },
+        {
+          "t": 2076,
+          "value": 0.670934185887
+        },
+        {
+          "t": 2077,
+          "value": 1.506274155457
+        },
+        {
+          "t": 2078,
+          "value": 1.19548273329
+        },
+        {
+          "t": 2079,
+          "value": 0.900482147029
+        },
+        {
+          "t": 2080,
+          "value": 0.728884035927
+        },
+        {
+          "t": 2081,
+          "value": 0.970195964448
+        },
+        {
+          "t": 2082,
+          "value": 1.291116728269
+        },
+        {
+          "t": 2083,
+          "value": 0.939053065595
+        },
+        {
+          "t": 2084,
+          "value": 0.980802542504
+        },
+        {
+          "t": 2085,
+          "value": 1.05357925395
+        },
+        {
+          "t": 2086,
+          "value": 0.853298190142
+        },
+        {
+          "t": 2087,
+          "value": 1.003512947418
+        },
+        {
+          "t": 2088,
+          "value": 1.017736221379
+        },
+        {
+          "t": 2089,
+          "value": 1.023862731071
+        },
+        {
+          "t": 2090,
+          "value": 0.896845208283
+        },
+        {
+          "t": 2091,
+          "value": 0.520158893836
+        },
+        {
+          "t": 2092,
+          "value": 0.967025417557
+        },
+        {
+          "t": 2093,
+          "value": 0.715887028069
+        },
+        {
+          "t": 2094,
+          "value": 0.956771759279
+        },
+        {
+          "t": 2095,
+          "value": 0.95922746805
+        },
+        {
+          "t": 2096,
+          "value": 0.67059502342
+        },
+        {
+          "t": 2097,
+          "value": 1.118042703622
+        },
+        {
+          "t": 2098,
+          "value": 0.715906393481
+        },
+        {
+          "t": 2099,
+          "value": 0.540813675276
+        }
+      ],
+      "paramName": "CabPrV2_mmday",
+      "paramValue": [
+        {
+          "t": 1950,
+          "value": 1.060566773542
+        },
+        {
+          "t": 1951,
+          "value": 1.164400099289
+        },
+        {
+          "t": 1952,
+          "value": 0.655878099236
+        },
+        {
+          "t": 1953,
+          "value": 0.981625365461
+        },
+        {
+          "t": 1954,
+          "value": 0.758238280083
+        },
+        {
+          "t": 1955,
+          "value": 0.955371691799
+        },
+        {
+          "t": 1956,
+          "value": 1.042052708443
+        },
+        {
+          "t": 1957,
+          "value": 0.922670898228
+        },
+        {
+          "t": 1958,
+          "value": 0.687721595457
+        },
+        {
+          "t": 1959,
+          "value": 1.113647378678
+        },
+        {
+          "t": 1960,
+          "value": 0.847855641492
+        },
+        {
+          "t": 1961,
+          "value": 1.153007029227
+        },
+        {
+          "t": 1962,
+          "value": 0.782438473539
+        },
+        {
+          "t": 1963,
+          "value": 1.053611843711
+        },
+        {
+          "t": 1964,
+          "value": 0.718735797782
+        },
+        {
+          "t": 1965,
+          "value": 1.06996667864
+        },
+        {
+          "t": 1966,
+          "value": 0.680645256658
+        },
+        {
+          "t": 1967,
+          "value": 0.710749150355
+        },
+        {
+          "t": 1968,
+          "value": 0.886675233214
+        },
+        {
+          "t": 1969,
+          "value": 0.844093100182
+        },
+        {
+          "t": 1970,
+          "value": 1.090718329423
+        },
+        {
+          "t": 1971,
+          "value": 0.765233455831
+        },
+        {
+          "t": 1972,
+          "value": 0.853523337793
+        },
+        {
+          "t": 1973,
+          "value": 1.243345824184
+        },
+        {
+          "t": 1974,
+          "value": 0.581833335198
+        },
+        {
+          "t": 1975,
+          "value": 0.921038399867
+        },
+        {
+          "t": 1976,
+          "value": 0.696848545897
+        },
+        {
+          "t": 1977,
+          "value": 0.751128201713
+        },
+        {
+          "t": 1978,
+          "value": 0.922971849241
+        },
+        {
+          "t": 1979,
+          "value": 0.938585106491
+        },
+        {
+          "t": 1980,
+          "value": 0.849882401902
+        },
+        {
+          "t": 1981,
+          "value": 1.280852262552
+        },
+        {
+          "t": 1982,
+          "value": 1.199570564184
+        },
+        {
+          "t": 1983,
+          "value": 0.778466973709
+        },
+        {
+          "t": 1984,
+          "value": 0.821139639388
+        },
+        {
+          "t": 1985,
+          "value": 0.755852864862
+        },
+        {
+          "t": 1986,
+          "value": 0.933394448107
+        },
+        {
+          "t": 1987,
+          "value": 1.201146242756
+        },
+        {
+          "t": 1988,
+          "value": 1.251931324335
+        },
+        {
+          "t": 1989,
+          "value": 0.79550638343
+        },
+        {
+          "t": 1990,
+          "value": 0.898262415475
+        },
+        {
+          "t": 1991,
+          "value": 0.482374312892
+        },
+        {
+          "t": 1992,
+          "value": 0.651155414485
+        },
+        {
+          "t": 1993,
+          "value": 1.012131986185
+        },
+        {
+          "t": 1994,
+          "value": 0.516911481381
+        },
+        {
+          "t": 1995,
+          "value": 1.005056371958
+        },
+        {
+          "t": 1996,
+          "value": 1.063998789594
+        },
+        {
+          "t": 1997,
+          "value": 0.977544468702
+        },
+        {
+          "t": 1998,
+          "value": 0.872895214057
+        },
+        {
+          "t": 1999,
+          "value": 1.615297571564
+        },
+        {
+          "t": 2000,
+          "value": 1.250277001581
+        },
+        {
+          "t": 2001,
+          "value": 0.87502609767
+        },
+        {
+          "t": 2002,
+          "value": 1.209982605051
+        },
+        {
+          "t": 2003,
+          "value": 1.076281643888
+        },
+        {
+          "t": 2004,
+          "value": 1.53530749998
+        },
+        {
+          "t": 2005,
+          "value": 0.469510703931
+        },
+        {
+          "t": 2006,
+          "value": 1.423239565033
+        },
+        {
+          "t": 2007,
+          "value": 0.716361568384
+        },
+        {
+          "t": 2008,
+          "value": 0.702842078602
+        },
+        {
+          "t": 2009,
+          "value": 1.02928881097
+        },
+        {
+          "t": 2010,
+          "value": 0.720878266109
+        },
+        {
+          "t": 2011,
+          "value": 0.890800707758
+        },
+        {
+          "t": 2012,
+          "value": 0.623364576876
+        },
+        {
+          "t": 2013,
+          "value": 1.231919891246
+        },
+        {
+          "t": 2014,
+          "value": 1.34520064209
+        },
+        {
+          "t": 2015,
+          "value": 0.858336297115
+        },
+        {
+          "t": 2016,
+          "value": 0.521687703158
+        },
+        {
+          "t": 2017,
+          "value": 1.172447071181
+        },
+        {
+          "t": 2018,
+          "value": 0.979656566782
+        },
+        {
+          "t": 2019,
+          "value": 0.593598799708
+        },
+        {
+          "t": 2020,
+          "value": 0.569152315497
+        },
+        {
+          "t": 2021,
+          "value": 0.833448782556
+        },
+        {
+          "t": 2022,
+          "value": 1.06014684833
+        },
+        {
+          "t": 2023,
+          "value": 0.758497710279
+        },
+        {
+          "t": 2024,
+          "value": 0.804914260637
+        },
+        {
+          "t": 2025,
+          "value": 1.123191540576
+        },
+        {
+          "t": 2026,
+          "value": 0.895251802236
+        },
+        {
+          "t": 2027,
+          "value": 1.085539435297
+        },
+        {
+          "t": 2028,
+          "value": 1.003982764828
+        },
+        {
+          "t": 2029,
+          "value": 0.498540775604
+        },
+        {
+          "t": 2030,
+          "value": 0.711965071113
+        },
+        {
+          "t": 2031,
+          "value": 0.87440771759
+        },
+        {
+          "t": 2032,
+          "value": 0.986394420547
+        },
+        {
+          "t": 2033,
+          "value": 0.874160170223
+        },
+        {
+          "t": 2034,
+          "value": 0.675024877351
+        },
+        {
+          "t": 2035,
+          "value": 1.145796340687
+        },
+        {
+          "t": 2036,
+          "value": 0.654936168874
+        },
+        {
+          "t": 2037,
+          "value": 0.962977815995
+        },
+        {
+          "t": 2038,
+          "value": 0.924420673252
+        },
+        {
+          "t": 2039,
+          "value": 0.584348077974
+        },
+        {
+          "t": 2040,
+          "value": 0.708081781343
+        },
+        {
+          "t": 2041,
+          "value": 0.669875252687
+        },
+        {
+          "t": 2042,
+          "value": 1.084164393045
+        },
+        {
+          "t": 2043,
+          "value": 1.289698658535
+        },
+        {
+          "t": 2044,
+          "value": 0.865035040223
+        },
+        {
+          "t": 2045,
+          "value": 0.636045960381
+        },
+        {
+          "t": 2046,
+          "value": 0.762808926485
+        },
+        {
+          "t": 2047,
+          "value": 0.719079947691
+        },
+        {
+          "t": 2048,
+          "value": 0.67166477628
+        },
+        {
+          "t": 2049,
+          "value": 0.768573827377
+        },
+        {
+          "t": 2050,
+          "value": 0.509849912779
+        },
+        {
+          "t": 2051,
+          "value": 0.565747073977
+        },
+        {
+          "t": 2052,
+          "value": 0.873150709969
+        },
+        {
+          "t": 2053,
+          "value": 0.736272493718
+        },
+        {
+          "t": 2054,
+          "value": 1.273690282116
+        },
+        {
+          "t": 2055,
+          "value": 0.973867007605
+        },
+        {
+          "t": 2056,
+          "value": 1.31059943171
+        },
+        {
+          "t": 2057,
+          "value": 1.021923531529
+        },
+        {
+          "t": 2058,
+          "value": 0.790271587812
+        },
+        {
+          "t": 2059,
+          "value": 0.786371090725
+        },
+        {
+          "t": 2060,
+          "value": 0.685063763161
+        },
+        {
+          "t": 2061,
+          "value": 0.871156051111
+        },
+        {
+          "t": 2062,
+          "value": 0.929287016037
+        },
+        {
+          "t": 2063,
+          "value": 0.563424336221
+        },
+        {
+          "t": 2064,
+          "value": 0.927033912499
+        },
+        {
+          "t": 2065,
+          "value": 0.860424610544
+        },
+        {
+          "t": 2066,
+          "value": 0.912581159172
+        },
+        {
+          "t": 2067,
+          "value": 1.359587275297
+        },
+        {
+          "t": 2068,
+          "value": 0.773810186527
+        },
+        {
+          "t": 2069,
+          "value": 1.149372904211
+        },
+        {
+          "t": 2070,
+          "value": 0.793897894759
+        },
+        {
+          "t": 2071,
+          "value": 0.850887670972
+        },
+        {
+          "t": 2072,
+          "value": 0.587856038799
+        },
+        {
+          "t": 2073,
+          "value": 1.105669697524
+        },
+        {
+          "t": 2074,
+          "value": 0.862542808217
+        },
+        {
+          "t": 2075,
+          "value": 0.865896757027
+        },
+        {
+          "t": 2076,
+          "value": 0.670934185887
+        },
+        {
+          "t": 2077,
+          "value": 1.506274155457
+        },
+        {
+          "t": 2078,
+          "value": 1.19548273329
+        },
+        {
+          "t": 2079,
+          "value": 0.900482147029
+        },
+        {
+          "t": 2080,
+          "value": 0.728884035927
+        },
+        {
+          "t": 2081,
+          "value": 0.970195964448
+        },
+        {
+          "t": 2082,
+          "value": 1.291116728269
+        },
+        {
+          "t": 2083,
+          "value": 0.939053065595
+        },
+        {
+          "t": 2084,
+          "value": 0.980802542504
+        },
+        {
+          "t": 2085,
+          "value": 1.05357925395
+        },
+        {
+          "t": 2086,
+          "value": 0.853298190142
+        },
+        {
+          "t": 2087,
+          "value": 1.003512947418
+        },
+        {
+          "t": 2088,
+          "value": 1.017736221379
+        },
+        {
+          "t": 2089,
+          "value": 1.023862731071
+        },
+        {
+          "t": 2090,
+          "value": 0.896845208283
+        },
+        {
+          "t": 2091,
+          "value": 0.520158893836
+        },
+        {
+          "t": 2092,
+          "value": 0.967025417557
+        },
+        {
+          "t": 2093,
+          "value": 0.715887028069
+        },
+        {
+          "t": 2094,
+          "value": 0.956771759279
+        },
+        {
+          "t": 2095,
+          "value": 0.95922746805
+        },
+        {
+          "t": 2096,
+          "value": 0.67059502342
+        },
+        {
+          "t": 2097,
+          "value": 1.118042703622
+        },
+        {
+          "t": 2098,
+          "value": 0.715906393481
+        },
+        {
+          "t": 2099,
+          "value": 0.540813675276
+        }
+      ],
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average daily precipitation at Caballo Reservoir per year",
+          "paramLabel": "Average Daily Precipitation at Caballo Reservoir",
+          "paramUnit": "mm/day"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Precipitación promedio en la presa El Caballo por año",
+          "paramLabel": "Precipitación Diaria Promedio en Presa el Caballo",
+          "paramUnit": "mm/día"
+        }
+      ],
+      "structDimension": "1",
+      "structType": "table"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": [
+        {
+          "t": 1950,
+          "value": 11.916532487858
+        },
+        {
+          "t": 1951,
+          "value": 11.378549356784
+        },
+        {
+          "t": 1952,
+          "value": 12.433516157046
+        },
+        {
+          "t": 1953,
+          "value": 12.194673277673
+        },
+        {
+          "t": 1954,
+          "value": 12.091037780052
+        },
+        {
+          "t": 1955,
+          "value": 11.986018782217
+        },
+        {
+          "t": 1956,
+          "value": 11.4846953506
+        },
+        {
+          "t": 1957,
+          "value": 11.230541353423
+        },
+        {
+          "t": 1958,
+          "value": 12.185008429344
+        },
+        {
+          "t": 1959,
+          "value": 11.714211164599
+        },
+        {
+          "t": 1960,
+          "value": 11.745885704593
+        },
+        {
+          "t": 1961,
+          "value": 11.680103427002
+        },
+        {
+          "t": 1962,
+          "value": 11.620938269283
+        },
+        {
+          "t": 1963,
+          "value": 11.890673759675
+        },
+        {
+          "t": 1964,
+          "value": 12.3893697898
+        },
+        {
+          "t": 1965,
+          "value": 11.459655965259
+        },
+        {
+          "t": 1966,
+          "value": 11.890477451069
+        },
+        {
+          "t": 1967,
+          "value": 12.844017382649
+        },
+        {
+          "t": 1968,
+          "value": 10.947486955132
+        },
+        {
+          "t": 1969,
+          "value": 11.309470179304
+        },
+        {
+          "t": 1970,
+          "value": 11.540195227372
+        },
+        {
+          "t": 1971,
+          "value": 12.060506946035
+        },
+        {
+          "t": 1972,
+          "value": 12.494310290085
+        },
+        {
+          "t": 1973,
+          "value": 11.908658859927
+        },
+        {
+          "t": 1974,
+          "value": 12.084798361108
+        },
+        {
+          "t": 1975,
+          "value": 11.904389791186
+        },
+        {
+          "t": 1976,
+          "value": 11.198182808268
+        },
+        {
+          "t": 1977,
+          "value": 12.48659690256
+        },
+        {
+          "t": 1978,
+          "value": 11.488179019759
+        },
+        {
+          "t": 1979,
+          "value": 11.839069496557
+        },
+        {
+          "t": 1980,
+          "value": 12.334584213674
+        },
+        {
+          "t": 1981,
+          "value": 11.914931635074
+        },
+        {
+          "t": 1982,
+          "value": 11.62686178023
+        },
+        {
+          "t": 1983,
+          "value": 12.41269925662
+        },
+        {
+          "t": 1984,
+          "value": 11.867112101062
+        },
+        {
+          "t": 1985,
+          "value": 12.888253390193
+        },
+        {
+          "t": 1986,
+          "value": 12.204122338024
+        },
+        {
+          "t": 1987,
+          "value": 10.857715155638
+        },
+        {
+          "t": 1988,
+          "value": 11.223968171178
+        },
+        {
+          "t": 1989,
+          "value": 12.542294073445
+        },
+        {
+          "t": 1990,
+          "value": 12.4815995122
+        },
+        {
+          "t": 1991,
+          "value": 12.00301093289
+        },
+        {
+          "t": 1992,
+          "value": 12.255658757829
+        },
+        {
+          "t": 1993,
+          "value": 11.742981650042
+        },
+        {
+          "t": 1994,
+          "value": 12.307610528218
+        },
+        {
+          "t": 1995,
+          "value": 12.148660946404
+        },
+        {
+          "t": 1996,
+          "value": 12.126583511573
+        },
+        {
+          "t": 1997,
+          "value": 12.120601005016
+        },
+        {
+          "t": 1998,
+          "value": 12.422192335118
+        },
+        {
+          "t": 1999,
+          "value": 12.427756454725
+        },
+        {
+          "t": 2000,
+          "value": 11.959182964657
+        },
+        {
+          "t": 2001,
+          "value": 12.333823533757
+        },
+        {
+          "t": 2002,
+          "value": 13.041024066149
+        },
+        {
+          "t": 2003,
+          "value": 12.949693191141
+        },
+        {
+          "t": 2004,
+          "value": 11.928429212488
+        },
+        {
+          "t": 2005,
+          "value": 12.956848741519
+        },
+        {
+          "t": 2006,
+          "value": 12.352992945003
+        },
+        {
+          "t": 2007,
+          "value": 12.539070555003
+        },
+        {
+          "t": 2008,
+          "value": 13.444872293318
+        },
+        {
+          "t": 2009,
+          "value": 12.944730330908
+        },
+        {
+          "t": 2010,
+          "value": 13.264131199143
+        },
+        {
+          "t": 2011,
+          "value": 13.173637794495
+        },
+        {
+          "t": 2012,
+          "value": 13.909360477564
+        },
+        {
+          "t": 2013,
+          "value": 13.113173893517
+        },
+        {
+          "t": 2014,
+          "value": 12.226053742648
+        },
+        {
+          "t": 2015,
+          "value": 13.268733867824
+        },
+        {
+          "t": 2016,
+          "value": 13.665991667963
+        },
+        {
+          "t": 2017,
+          "value": 12.803922091689
+        },
+        {
+          "t": 2018,
+          "value": 13.27891707704
+        },
+        {
+          "t": 2019,
+          "value": 13.04087987496
+        },
+        {
+          "t": 2020,
+          "value": 14.362035279944
+        },
+        {
+          "t": 2021,
+          "value": 12.970653535
+        },
+        {
+          "t": 2022,
+          "value": 13.616876407499
+        },
+        {
+          "t": 2023,
+          "value": 14.212370504469
+        },
+        {
+          "t": 2024,
+          "value": 13.883358177916
+        },
+        {
+          "t": 2025,
+          "value": 13.152536742155
+        },
+        {
+          "t": 2026,
+          "value": 13.991204162208
+        },
+        {
+          "t": 2027,
+          "value": 12.875313488263
+        },
+        {
+          "t": 2028,
+          "value": 13.308650447968
+        },
+        {
+          "t": 2029,
+          "value": 13.752648018647
+        },
+        {
+          "t": 2030,
+          "value": 13.572111481478
+        },
+        {
+          "t": 2031,
+          "value": 13.744205770753
+        },
+        {
+          "t": 2032,
+          "value": 13.604288357127
+        },
+        {
+          "t": 2033,
+          "value": 13.210340415318
+        },
+        {
+          "t": 2034,
+          "value": 14.47368195558
+        },
+        {
+          "t": 2035,
+          "value": 14.027788525423
+        },
+        {
+          "t": 2036,
+          "value": 14.523254683566
+        },
+        {
+          "t": 2037,
+          "value": 13.723382167461
+        },
+        {
+          "t": 2038,
+          "value": 13.136438859008
+        },
+        {
+          "t": 2039,
+          "value": 13.406568324164
+        },
+        {
+          "t": 2040,
+          "value": 13.143073194899
+        },
+        {
+          "t": 2041,
+          "value": 13.937439417311
+        },
+        {
+          "t": 2042,
+          "value": 13.703709919059
+        },
+        {
+          "t": 2043,
+          "value": 13.585191086886
+        },
+        {
+          "t": 2044,
+          "value": 14.041911417303
+        },
+        {
+          "t": 2045,
+          "value": 14.318449521114
+        },
+        {
+          "t": 2046,
+          "value": 13.62479032032
+        },
+        {
+          "t": 2047,
+          "value": 14.615494288624
+        },
+        {
+          "t": 2048,
+          "value": 14.584166319118
+        },
+        {
+          "t": 2049,
+          "value": 13.827917868178
+        },
+        {
+          "t": 2050,
+          "value": 14.948879717839
+        },
+        {
+          "t": 2051,
+          "value": 14.894506689113
+        },
+        {
+          "t": 2052,
+          "value": 14.56334204711
+        },
+        {
+          "t": 2053,
+          "value": 15.076502988977
+        },
+        {
+          "t": 2054,
+          "value": 14.138263967286
+        },
+        {
+          "t": 2055,
+          "value": 14.008716956489
+        },
+        {
+          "t": 2056,
+          "value": 13.605468141662
+        },
+        {
+          "t": 2057,
+          "value": 13.560778379437
+        },
+        {
+          "t": 2058,
+          "value": 14.463528267445
+        },
+        {
+          "t": 2059,
+          "value": 14.407140210036
+        },
+        {
+          "t": 2060,
+          "value": 15.561735563328
+        },
+        {
+          "t": 2061,
+          "value": 15.597885024465
+        },
+        {
+          "t": 2062,
+          "value": 15.010426692542
+        },
+        {
+          "t": 2063,
+          "value": 14.599201646583
+        },
+        {
+          "t": 2064,
+          "value": 14.4830049002
+        },
+        {
+          "t": 2065,
+          "value": 15.692771691663
+        },
+        {
+          "t": 2066,
+          "value": 14.30693717017
+        },
+        {
+          "t": 2067,
+          "value": 14.472472699391
+        },
+        {
+          "t": 2068,
+          "value": 14.829388292057
+        },
+        {
+          "t": 2069,
+          "value": 15.554859949251
+        },
+        {
+          "t": 2070,
+          "value": 14.742349701738
+        },
+        {
+          "t": 2071,
+          "value": 14.514966303151
+        },
+        {
+          "t": 2072,
+          "value": 15.775456162669
+        },
+        {
+          "t": 2073,
+          "value": 14.936087046111
+        },
+        {
+          "t": 2074,
+          "value": 14.678448778778
+        },
+        {
+          "t": 2075,
+          "value": 15.069968185733
+        },
+        {
+          "t": 2076,
+          "value": 15.531868653637
+        },
+        {
+          "t": 2077,
+          "value": 15.101240167549
+        },
+        {
+          "t": 2078,
+          "value": 15.830727373311
+        },
+        {
+          "t": 2079,
+          "value": 15.133605725582
+        },
+        {
+          "t": 2080,
+          "value": 15.654006934363
+        },
+        {
+          "t": 2081,
+          "value": 14.726230977083
+        },
+        {
+          "t": 2082,
+          "value": 14.612363913709
+        },
+        {
+          "t": 2083,
+          "value": 16.349957230553
+        },
+        {
+          "t": 2084,
+          "value": 15.534529722403
+        },
+        {
+          "t": 2085,
+          "value": 14.452337081698
+        },
+        {
+          "t": 2086,
+          "value": 14.981325515204
+        },
+        {
+          "t": 2087,
+          "value": 14.734810612024
+        },
+        {
+          "t": 2088,
+          "value": 15.314028130172
+        },
+        {
+          "t": 2089,
+          "value": 14.894392811829
+        },
+        {
+          "t": 2090,
+          "value": 15.034538376659
+        },
+        {
+          "t": 2091,
+          "value": 15.885978396446
+        },
+        {
+          "t": 2092,
+          "value": 15.075031304638
+        },
+        {
+          "t": 2093,
+          "value": 15.754024595496
+        },
+        {
+          "t": 2094,
+          "value": 15.344587441475
+        },
+        {
+          "t": 2095,
+          "value": 14.986475319615
+        },
+        {
+          "t": 2096,
+          "value": 15.169064310573
+        },
+        {
+          "t": 2097,
+          "value": 15.046381816509
+        },
+        {
+          "t": 2098,
+          "value": 15.126358969817
+        },
+        {
+          "t": 2099,
+          "value": 16.154374330745
+        }
+      ],
+      "paramName": "CabTasV2_degC",
+      "paramValue": [
+        {
+          "t": 1950,
+          "value": 11.916532487858
+        },
+        {
+          "t": 1951,
+          "value": 11.378549356784
+        },
+        {
+          "t": 1952,
+          "value": 12.433516157046
+        },
+        {
+          "t": 1953,
+          "value": 12.194673277673
+        },
+        {
+          "t": 1954,
+          "value": 12.091037780052
+        },
+        {
+          "t": 1955,
+          "value": 11.986018782217
+        },
+        {
+          "t": 1956,
+          "value": 11.4846953506
+        },
+        {
+          "t": 1957,
+          "value": 11.230541353423
+        },
+        {
+          "t": 1958,
+          "value": 12.185008429344
+        },
+        {
+          "t": 1959,
+          "value": 11.714211164599
+        },
+        {
+          "t": 1960,
+          "value": 11.745885704593
+        },
+        {
+          "t": 1961,
+          "value": 11.680103427002
+        },
+        {
+          "t": 1962,
+          "value": 11.620938269283
+        },
+        {
+          "t": 1963,
+          "value": 11.890673759675
+        },
+        {
+          "t": 1964,
+          "value": 12.3893697898
+        },
+        {
+          "t": 1965,
+          "value": 11.459655965259
+        },
+        {
+          "t": 1966,
+          "value": 11.890477451069
+        },
+        {
+          "t": 1967,
+          "value": 12.844017382649
+        },
+        {
+          "t": 1968,
+          "value": 10.947486955132
+        },
+        {
+          "t": 1969,
+          "value": 11.309470179304
+        },
+        {
+          "t": 1970,
+          "value": 11.540195227372
+        },
+        {
+          "t": 1971,
+          "value": 12.060506946035
+        },
+        {
+          "t": 1972,
+          "value": 12.494310290085
+        },
+        {
+          "t": 1973,
+          "value": 11.908658859927
+        },
+        {
+          "t": 1974,
+          "value": 12.084798361108
+        },
+        {
+          "t": 1975,
+          "value": 11.904389791186
+        },
+        {
+          "t": 1976,
+          "value": 11.198182808268
+        },
+        {
+          "t": 1977,
+          "value": 12.48659690256
+        },
+        {
+          "t": 1978,
+          "value": 11.488179019759
+        },
+        {
+          "t": 1979,
+          "value": 11.839069496557
+        },
+        {
+          "t": 1980,
+          "value": 12.334584213674
+        },
+        {
+          "t": 1981,
+          "value": 11.914931635074
+        },
+        {
+          "t": 1982,
+          "value": 11.62686178023
+        },
+        {
+          "t": 1983,
+          "value": 12.41269925662
+        },
+        {
+          "t": 1984,
+          "value": 11.867112101062
+        },
+        {
+          "t": 1985,
+          "value": 12.888253390193
+        },
+        {
+          "t": 1986,
+          "value": 12.204122338024
+        },
+        {
+          "t": 1987,
+          "value": 10.857715155638
+        },
+        {
+          "t": 1988,
+          "value": 11.223968171178
+        },
+        {
+          "t": 1989,
+          "value": 12.542294073445
+        },
+        {
+          "t": 1990,
+          "value": 12.4815995122
+        },
+        {
+          "t": 1991,
+          "value": 12.00301093289
+        },
+        {
+          "t": 1992,
+          "value": 12.255658757829
+        },
+        {
+          "t": 1993,
+          "value": 11.742981650042
+        },
+        {
+          "t": 1994,
+          "value": 12.307610528218
+        },
+        {
+          "t": 1995,
+          "value": 12.148660946404
+        },
+        {
+          "t": 1996,
+          "value": 12.126583511573
+        },
+        {
+          "t": 1997,
+          "value": 12.120601005016
+        },
+        {
+          "t": 1998,
+          "value": 12.422192335118
+        },
+        {
+          "t": 1999,
+          "value": 12.427756454725
+        },
+        {
+          "t": 2000,
+          "value": 11.959182964657
+        },
+        {
+          "t": 2001,
+          "value": 12.333823533757
+        },
+        {
+          "t": 2002,
+          "value": 13.041024066149
+        },
+        {
+          "t": 2003,
+          "value": 12.949693191141
+        },
+        {
+          "t": 2004,
+          "value": 11.928429212488
+        },
+        {
+          "t": 2005,
+          "value": 12.956848741519
+        },
+        {
+          "t": 2006,
+          "value": 12.352992945003
+        },
+        {
+          "t": 2007,
+          "value": 12.539070555003
+        },
+        {
+          "t": 2008,
+          "value": 13.444872293318
+        },
+        {
+          "t": 2009,
+          "value": 12.944730330908
+        },
+        {
+          "t": 2010,
+          "value": 13.264131199143
+        },
+        {
+          "t": 2011,
+          "value": 13.173637794495
+        },
+        {
+          "t": 2012,
+          "value": 13.909360477564
+        },
+        {
+          "t": 2013,
+          "value": 13.113173893517
+        },
+        {
+          "t": 2014,
+          "value": 12.226053742648
+        },
+        {
+          "t": 2015,
+          "value": 13.268733867824
+        },
+        {
+          "t": 2016,
+          "value": 13.665991667963
+        },
+        {
+          "t": 2017,
+          "value": 12.803922091689
+        },
+        {
+          "t": 2018,
+          "value": 13.27891707704
+        },
+        {
+          "t": 2019,
+          "value": 13.04087987496
+        },
+        {
+          "t": 2020,
+          "value": 14.362035279944
+        },
+        {
+          "t": 2021,
+          "value": 12.970653535
+        },
+        {
+          "t": 2022,
+          "value": 13.616876407499
+        },
+        {
+          "t": 2023,
+          "value": 14.212370504469
+        },
+        {
+          "t": 2024,
+          "value": 13.883358177916
+        },
+        {
+          "t": 2025,
+          "value": 13.152536742155
+        },
+        {
+          "t": 2026,
+          "value": 13.991204162208
+        },
+        {
+          "t": 2027,
+          "value": 12.875313488263
+        },
+        {
+          "t": 2028,
+          "value": 13.308650447968
+        },
+        {
+          "t": 2029,
+          "value": 13.752648018647
+        },
+        {
+          "t": 2030,
+          "value": 13.572111481478
+        },
+        {
+          "t": 2031,
+          "value": 13.744205770753
+        },
+        {
+          "t": 2032,
+          "value": 13.604288357127
+        },
+        {
+          "t": 2033,
+          "value": 13.210340415318
+        },
+        {
+          "t": 2034,
+          "value": 14.47368195558
+        },
+        {
+          "t": 2035,
+          "value": 14.027788525423
+        },
+        {
+          "t": 2036,
+          "value": 14.523254683566
+        },
+        {
+          "t": 2037,
+          "value": 13.723382167461
+        },
+        {
+          "t": 2038,
+          "value": 13.136438859008
+        },
+        {
+          "t": 2039,
+          "value": 13.406568324164
+        },
+        {
+          "t": 2040,
+          "value": 13.143073194899
+        },
+        {
+          "t": 2041,
+          "value": 13.937439417311
+        },
+        {
+          "t": 2042,
+          "value": 13.703709919059
+        },
+        {
+          "t": 2043,
+          "value": 13.585191086886
+        },
+        {
+          "t": 2044,
+          "value": 14.041911417303
+        },
+        {
+          "t": 2045,
+          "value": 14.318449521114
+        },
+        {
+          "t": 2046,
+          "value": 13.62479032032
+        },
+        {
+          "t": 2047,
+          "value": 14.615494288624
+        },
+        {
+          "t": 2048,
+          "value": 14.584166319118
+        },
+        {
+          "t": 2049,
+          "value": 13.827917868178
+        },
+        {
+          "t": 2050,
+          "value": 14.948879717839
+        },
+        {
+          "t": 2051,
+          "value": 14.894506689113
+        },
+        {
+          "t": 2052,
+          "value": 14.56334204711
+        },
+        {
+          "t": 2053,
+          "value": 15.076502988977
+        },
+        {
+          "t": 2054,
+          "value": 14.138263967286
+        },
+        {
+          "t": 2055,
+          "value": 14.008716956489
+        },
+        {
+          "t": 2056,
+          "value": 13.605468141662
+        },
+        {
+          "t": 2057,
+          "value": 13.560778379437
+        },
+        {
+          "t": 2058,
+          "value": 14.463528267445
+        },
+        {
+          "t": 2059,
+          "value": 14.407140210036
+        },
+        {
+          "t": 2060,
+          "value": 15.561735563328
+        },
+        {
+          "t": 2061,
+          "value": 15.597885024465
+        },
+        {
+          "t": 2062,
+          "value": 15.010426692542
+        },
+        {
+          "t": 2063,
+          "value": 14.599201646583
+        },
+        {
+          "t": 2064,
+          "value": 14.4830049002
+        },
+        {
+          "t": 2065,
+          "value": 15.692771691663
+        },
+        {
+          "t": 2066,
+          "value": 14.30693717017
+        },
+        {
+          "t": 2067,
+          "value": 14.472472699391
+        },
+        {
+          "t": 2068,
+          "value": 14.829388292057
+        },
+        {
+          "t": 2069,
+          "value": 15.554859949251
+        },
+        {
+          "t": 2070,
+          "value": 14.742349701738
+        },
+        {
+          "t": 2071,
+          "value": 14.514966303151
+        },
+        {
+          "t": 2072,
+          "value": 15.775456162669
+        },
+        {
+          "t": 2073,
+          "value": 14.936087046111
+        },
+        {
+          "t": 2074,
+          "value": 14.678448778778
+        },
+        {
+          "t": 2075,
+          "value": 15.069968185733
+        },
+        {
+          "t": 2076,
+          "value": 15.531868653637
+        },
+        {
+          "t": 2077,
+          "value": 15.101240167549
+        },
+        {
+          "t": 2078,
+          "value": 15.830727373311
+        },
+        {
+          "t": 2079,
+          "value": 15.133605725582
+        },
+        {
+          "t": 2080,
+          "value": 15.654006934363
+        },
+        {
+          "t": 2081,
+          "value": 14.726230977083
+        },
+        {
+          "t": 2082,
+          "value": 14.612363913709
+        },
+        {
+          "t": 2083,
+          "value": 16.349957230553
+        },
+        {
+          "t": 2084,
+          "value": 15.534529722403
+        },
+        {
+          "t": 2085,
+          "value": 14.452337081698
+        },
+        {
+          "t": 2086,
+          "value": 14.981325515204
+        },
+        {
+          "t": 2087,
+          "value": 14.734810612024
+        },
+        {
+          "t": 2088,
+          "value": 15.314028130172
+        },
+        {
+          "t": 2089,
+          "value": 14.894392811829
+        },
+        {
+          "t": 2090,
+          "value": 15.034538376659
+        },
+        {
+          "t": 2091,
+          "value": 15.885978396446
+        },
+        {
+          "t": 2092,
+          "value": 15.075031304638
+        },
+        {
+          "t": 2093,
+          "value": 15.754024595496
+        },
+        {
+          "t": 2094,
+          "value": 15.344587441475
+        },
+        {
+          "t": 2095,
+          "value": 14.986475319615
+        },
+        {
+          "t": 2096,
+          "value": 15.169064310573
+        },
+        {
+          "t": 2097,
+          "value": 15.046381816509
+        },
+        {
+          "t": 2098,
+          "value": 15.126358969817
+        },
+        {
+          "t": 2099,
+          "value": 16.154374330745
+        }
+      ],
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average annual temperature at Caballo Reservoir.",
+          "paramLabel": "Average Temperature at Caballo Reservoir",
+          "paramUnit": "Celsius"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Temperatura anual promedio en presa El Caballo.",
+          "paramLabel": "Temperatura Promedio en Presa El Caballo",
+          "paramUnit": "Centigrados"
+        }
+      ],
+      "structDimension": "1",
+      "structType": "table"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": [
+        {
+          "t": 1950,
+          "value": 0.924887363324
+        },
+        {
+          "t": 1951,
+          "value": 1.102284993167
+        },
+        {
+          "t": 1952,
+          "value": 0.573869303676
+        },
+        {
+          "t": 1953,
+          "value": 0.877069803101
+        },
+        {
+          "t": 1954,
+          "value": 0.645404095811
+        },
+        {
+          "t": 1955,
+          "value": 0.797164609485
+        },
+        {
+          "t": 1956,
+          "value": 0.925007300171
+        },
+        {
+          "t": 1957,
+          "value": 0.815286341517
+        },
+        {
+          "t": 1958,
+          "value": 0.569274094228
+        },
+        {
+          "t": 1959,
+          "value": 1.020920563268
+        },
+        {
+          "t": 1960,
+          "value": 0.72054709607
+        },
+        {
+          "t": 1961,
+          "value": 0.962699645195
+        },
+        {
+          "t": 1962,
+          "value": 0.700783114392
+        },
+        {
+          "t": 1963,
+          "value": 0.99059004903
+        },
+        {
+          "t": 1964,
+          "value": 0.684782861197
+        },
+        {
+          "t": 1965,
+          "value": 0.909197801931
+        },
+        {
+          "t": 1966,
+          "value": 0.608177501134
+        },
+        {
+          "t": 1967,
+          "value": 0.599997625861
+        },
+        {
+          "t": 1968,
+          "value": 0.790143045531
+        },
+        {
+          "t": 1969,
+          "value": 0.728832483668
+        },
+        {
+          "t": 1970,
+          "value": 0.948983046416
+        },
+        {
+          "t": 1971,
+          "value": 0.697845629618
+        },
+        {
+          "t": 1972,
+          "value": 0.728182135685
+        },
+        {
+          "t": 1973,
+          "value": 1.086968746593
+        },
+        {
+          "t": 1974,
+          "value": 0.524353622845
+        },
+        {
+          "t": 1975,
+          "value": 0.825897029644
+        },
+        {
+          "t": 1976,
+          "value": 0.612957692263
+        },
+        {
+          "t": 1977,
+          "value": 0.704207629093
+        },
+        {
+          "t": 1978,
+          "value": 0.836312540845
+        },
+        {
+          "t": 1979,
+          "value": 0.831301948864
+        },
+        {
+          "t": 1980,
+          "value": 0.743649346864
+        },
+        {
+          "t": 1981,
+          "value": 1.130344104097
+        },
+        {
+          "t": 1982,
+          "value": 1.069910019656
+        },
+        {
+          "t": 1983,
+          "value": 0.714868613114
+        },
+        {
+          "t": 1984,
+          "value": 0.710674932692
+        },
+        {
+          "t": 1985,
+          "value": 0.685785946364
+        },
+        {
+          "t": 1986,
+          "value": 0.824980725901
+        },
+        {
+          "t": 1987,
+          "value": 1.09669510992
+        },
+        {
+          "t": 1988,
+          "value": 1.163643059894
+        },
+        {
+          "t": 1989,
+          "value": 0.725098311561
+        },
+        {
+          "t": 1990,
+          "value": 0.751164726689
+        },
+        {
+          "t": 1991,
+          "value": 0.438346627818
+        },
+        {
+          "t": 1992,
+          "value": 0.565568104937
+        },
+        {
+          "t": 1993,
+          "value": 0.906587127465
+        },
+        {
+          "t": 1994,
+          "value": 0.47809217595
+        },
+        {
+          "t": 1995,
+          "value": 0.909522166801
+        },
+        {
+          "t": 1996,
+          "value": 0.946998945748
+        },
+        {
+          "t": 1997,
+          "value": 0.873507211807
+        },
+        {
+          "t": 1998,
+          "value": 0.79643054886
+        },
+        {
+          "t": 1999,
+          "value": 1.408871147255
+        },
+        {
+          "t": 2000,
+          "value": 1.108965416218
+        },
+        {
+          "t": 2001,
+          "value": 0.744313983397
+        },
+        {
+          "t": 2002,
+          "value": 1.028085396852
+        },
+        {
+          "t": 2003,
+          "value": 0.930561879265
+        },
+        {
+          "t": 2004,
+          "value": 1.375223594219
+        },
+        {
+          "t": 2005,
+          "value": 0.392867442125
+        },
+        {
+          "t": 2006,
+          "value": 1.229868384064
+        },
+        {
+          "t": 2007,
+          "value": 0.638666887815
+        },
+        {
+          "t": 2008,
+          "value": 0.635183880068
+        },
+        {
+          "t": 2009,
+          "value": 0.874221832326
+        },
+        {
+          "t": 2010,
+          "value": 0.702208602621
+        },
+        {
+          "t": 2011,
+          "value": 0.809971954893
+        },
+        {
+          "t": 2012,
+          "value": 0.530659889323
+        },
+        {
+          "t": 2013,
+          "value": 1.093198623245
+        },
+        {
+          "t": 2014,
+          "value": 1.210084824783
+        },
+        {
+          "t": 2015,
+          "value": 0.796029064815
+        },
+        {
+          "t": 2016,
+          "value": 0.458463990213
+        },
+        {
+          "t": 2017,
+          "value": 1.069797846968
+        },
+        {
+          "t": 2018,
+          "value": 0.858113518439
+        },
+        {
+          "t": 2019,
+          "value": 0.550270291101
+        },
+        {
+          "t": 2020,
+          "value": 0.486688978588
+        },
+        {
+          "t": 2021,
+          "value": 0.715121355401
+        },
+        {
+          "t": 2022,
+          "value": 0.926624019827
+        },
+        {
+          "t": 2023,
+          "value": 0.698238481684
+        },
+        {
+          "t": 2024,
+          "value": 0.775254546245
+        },
+        {
+          "t": 2025,
+          "value": 1.00403126031
+        },
+        {
+          "t": 2026,
+          "value": 0.812568041824
+        },
+        {
+          "t": 2027,
+          "value": 0.915039853165
+        },
+        {
+          "t": 2028,
+          "value": 0.868106390147
+        },
+        {
+          "t": 2029,
+          "value": 0.445064521401
+        },
+        {
+          "t": 2030,
+          "value": 0.603798509254
+        },
+        {
+          "t": 2031,
+          "value": 0.811336399593
+        },
+        {
+          "t": 2032,
+          "value": 0.86023749874
+        },
+        {
+          "t": 2033,
+          "value": 0.735658548274
+        },
+        {
+          "t": 2034,
+          "value": 0.622412040793
+        },
+        {
+          "t": 2035,
+          "value": 1.054663456195
+        },
+        {
+          "t": 2036,
+          "value": 0.572080387606
+        },
+        {
+          "t": 2037,
+          "value": 0.788193246641
+        },
+        {
+          "t": 2038,
+          "value": 0.85823241198
+        },
+        {
+          "t": 2039,
+          "value": 0.507097578631
+        },
+        {
+          "t": 2040,
+          "value": 0.649277853051
+        },
+        {
+          "t": 2041,
+          "value": 0.5888710419
+        },
+        {
+          "t": 2042,
+          "value": 0.9355753869
+        },
+        {
+          "t": 2043,
+          "value": 1.143873389974
+        },
+        {
+          "t": 2044,
+          "value": 0.749354126586
+        },
+        {
+          "t": 2045,
+          "value": 0.562967025774
+        },
+        {
+          "t": 2046,
+          "value": 0.694506514812
+        },
+        {
+          "t": 2047,
+          "value": 0.595114973407
+        },
+        {
+          "t": 2048,
+          "value": 0.570747482825
+        },
+        {
+          "t": 2049,
+          "value": 0.687087644286
+        },
+        {
+          "t": 2050,
+          "value": 0.446829804273
+        },
+        {
+          "t": 2051,
+          "value": 0.469758769963
+        },
+        {
+          "t": 2052,
+          "value": 0.831868389209
+        },
+        {
+          "t": 2053,
+          "value": 0.615004861645
+        },
+        {
+          "t": 2054,
+          "value": 1.114649194077
+        },
+        {
+          "t": 2055,
+          "value": 0.847802068512
+        },
+        {
+          "t": 2056,
+          "value": 1.12261427174
+        },
+        {
+          "t": 2057,
+          "value": 0.925832774835
+        },
+        {
+          "t": 2058,
+          "value": 0.65813224986
+        },
+        {
+          "t": 2059,
+          "value": 0.716881768823
+        },
+        {
+          "t": 2060,
+          "value": 0.571645836249
+        },
+        {
+          "t": 2061,
+          "value": 0.792899110397
+        },
+        {
+          "t": 2062,
+          "value": 0.817412245473
+        },
+        {
+          "t": 2063,
+          "value": 0.489424636912
+        },
+        {
+          "t": 2064,
+          "value": 0.84045076875
+        },
+        {
+          "t": 2065,
+          "value": 0.721654614959
+        },
+        {
+          "t": 2066,
+          "value": 0.798788566721
+        },
+        {
+          "t": 2067,
+          "value": 1.181225097463
+        },
+        {
+          "t": 2068,
+          "value": 0.672774100305
+        },
+        {
+          "t": 2069,
+          "value": 0.980745003885
+        },
+        {
+          "t": 2070,
+          "value": 0.690127345894
+        },
+        {
+          "t": 2071,
+          "value": 0.750244678487
+        },
+        {
+          "t": 2072,
+          "value": 0.520387585463
+        },
+        {
+          "t": 2073,
+          "value": 0.918496588095
+        },
+        {
+          "t": 2074,
+          "value": 0.796356570301
+        },
+        {
+          "t": 2075,
+          "value": 0.779207365836
+        },
+        {
+          "t": 2076,
+          "value": 0.607771341763
+        },
+        {
+          "t": 2077,
+          "value": 1.355644224707
+        },
+        {
+          "t": 2078,
+          "value": 1.050262340184
+        },
+        {
+          "t": 2079,
+          "value": 0.758878154785
+        },
+        {
+          "t": 2080,
+          "value": 0.63160082617
+        },
+        {
+          "t": 2081,
+          "value": 0.823538849431
+        },
+        {
+          "t": 2082,
+          "value": 1.177030838152
+        },
+        {
+          "t": 2083,
+          "value": 0.88603538476
+        },
+        {
+          "t": 2084,
+          "value": 0.905045773946
+        },
+        {
+          "t": 2085,
+          "value": 0.950162722352
+        },
+        {
+          "t": 2086,
+          "value": 0.766051400679
+        },
+        {
+          "t": 2087,
+          "value": 0.889241931118
+        },
+        {
+          "t": 2088,
+          "value": 0.857948231473
+        },
+        {
+          "t": 2089,
+          "value": 0.85952658257
+        },
+        {
+          "t": 2090,
+          "value": 0.771823634142
+        },
+        {
+          "t": 2091,
+          "value": 0.454008548855
+        },
+        {
+          "t": 2092,
+          "value": 0.866568705876
+        },
+        {
+          "t": 2093,
+          "value": 0.658704125382
+        },
+        {
+          "t": 2094,
+          "value": 0.862373359821
+        },
+        {
+          "t": 2095,
+          "value": 0.865125551529
+        },
+        {
+          "t": 2096,
+          "value": 0.512037907112
+        },
+        {
+          "t": 2097,
+          "value": 1.016170734361
+        },
+        {
+          "t": 2098,
+          "value": 0.634607992155
+        },
+        {
+          "t": 2099,
+          "value": 0.470932693616
+        }
+      ],
+      "paramName": "EBPrV2_mmday",
+      "paramValue": [
+        {
+          "t": 1950,
+          "value": 0.924887363324
+        },
+        {
+          "t": 1951,
+          "value": 1.102284993167
+        },
+        {
+          "t": 1952,
+          "value": 0.573869303676
+        },
+        {
+          "t": 1953,
+          "value": 0.877069803101
+        },
+        {
+          "t": 1954,
+          "value": 0.645404095811
+        },
+        {
+          "t": 1955,
+          "value": 0.797164609485
+        },
+        {
+          "t": 1956,
+          "value": 0.925007300171
+        },
+        {
+          "t": 1957,
+          "value": 0.815286341517
+        },
+        {
+          "t": 1958,
+          "value": 0.569274094228
+        },
+        {
+          "t": 1959,
+          "value": 1.020920563268
+        },
+        {
+          "t": 1960,
+          "value": 0.72054709607
+        },
+        {
+          "t": 1961,
+          "value": 0.962699645195
+        },
+        {
+          "t": 1962,
+          "value": 0.700783114392
+        },
+        {
+          "t": 1963,
+          "value": 0.99059004903
+        },
+        {
+          "t": 1964,
+          "value": 0.684782861197
+        },
+        {
+          "t": 1965,
+          "value": 0.909197801931
+        },
+        {
+          "t": 1966,
+          "value": 0.608177501134
+        },
+        {
+          "t": 1967,
+          "value": 0.599997625861
+        },
+        {
+          "t": 1968,
+          "value": 0.790143045531
+        },
+        {
+          "t": 1969,
+          "value": 0.728832483668
+        },
+        {
+          "t": 1970,
+          "value": 0.948983046416
+        },
+        {
+          "t": 1971,
+          "value": 0.697845629618
+        },
+        {
+          "t": 1972,
+          "value": 0.728182135685
+        },
+        {
+          "t": 1973,
+          "value": 1.086968746593
+        },
+        {
+          "t": 1974,
+          "value": 0.524353622845
+        },
+        {
+          "t": 1975,
+          "value": 0.825897029644
+        },
+        {
+          "t": 1976,
+          "value": 0.612957692263
+        },
+        {
+          "t": 1977,
+          "value": 0.704207629093
+        },
+        {
+          "t": 1978,
+          "value": 0.836312540845
+        },
+        {
+          "t": 1979,
+          "value": 0.831301948864
+        },
+        {
+          "t": 1980,
+          "value": 0.743649346864
+        },
+        {
+          "t": 1981,
+          "value": 1.130344104097
+        },
+        {
+          "t": 1982,
+          "value": 1.069910019656
+        },
+        {
+          "t": 1983,
+          "value": 0.714868613114
+        },
+        {
+          "t": 1984,
+          "value": 0.710674932692
+        },
+        {
+          "t": 1985,
+          "value": 0.685785946364
+        },
+        {
+          "t": 1986,
+          "value": 0.824980725901
+        },
+        {
+          "t": 1987,
+          "value": 1.09669510992
+        },
+        {
+          "t": 1988,
+          "value": 1.163643059894
+        },
+        {
+          "t": 1989,
+          "value": 0.725098311561
+        },
+        {
+          "t": 1990,
+          "value": 0.751164726689
+        },
+        {
+          "t": 1991,
+          "value": 0.438346627818
+        },
+        {
+          "t": 1992,
+          "value": 0.565568104937
+        },
+        {
+          "t": 1993,
+          "value": 0.906587127465
+        },
+        {
+          "t": 1994,
+          "value": 0.47809217595
+        },
+        {
+          "t": 1995,
+          "value": 0.909522166801
+        },
+        {
+          "t": 1996,
+          "value": 0.946998945748
+        },
+        {
+          "t": 1997,
+          "value": 0.873507211807
+        },
+        {
+          "t": 1998,
+          "value": 0.79643054886
+        },
+        {
+          "t": 1999,
+          "value": 1.408871147255
+        },
+        {
+          "t": 2000,
+          "value": 1.108965416218
+        },
+        {
+          "t": 2001,
+          "value": 0.744313983397
+        },
+        {
+          "t": 2002,
+          "value": 1.028085396852
+        },
+        {
+          "t": 2003,
+          "value": 0.930561879265
+        },
+        {
+          "t": 2004,
+          "value": 1.375223594219
+        },
+        {
+          "t": 2005,
+          "value": 0.392867442125
+        },
+        {
+          "t": 2006,
+          "value": 1.229868384064
+        },
+        {
+          "t": 2007,
+          "value": 0.638666887815
+        },
+        {
+          "t": 2008,
+          "value": 0.635183880068
+        },
+        {
+          "t": 2009,
+          "value": 0.874221832326
+        },
+        {
+          "t": 2010,
+          "value": 0.702208602621
+        },
+        {
+          "t": 2011,
+          "value": 0.809971954893
+        },
+        {
+          "t": 2012,
+          "value": 0.530659889323
+        },
+        {
+          "t": 2013,
+          "value": 1.093198623245
+        },
+        {
+          "t": 2014,
+          "value": 1.210084824783
+        },
+        {
+          "t": 2015,
+          "value": 0.796029064815
+        },
+        {
+          "t": 2016,
+          "value": 0.458463990213
+        },
+        {
+          "t": 2017,
+          "value": 1.069797846968
+        },
+        {
+          "t": 2018,
+          "value": 0.858113518439
+        },
+        {
+          "t": 2019,
+          "value": 0.550270291101
+        },
+        {
+          "t": 2020,
+          "value": 0.486688978588
+        },
+        {
+          "t": 2021,
+          "value": 0.715121355401
+        },
+        {
+          "t": 2022,
+          "value": 0.926624019827
+        },
+        {
+          "t": 2023,
+          "value": 0.698238481684
+        },
+        {
+          "t": 2024,
+          "value": 0.775254546245
+        },
+        {
+          "t": 2025,
+          "value": 1.00403126031
+        },
+        {
+          "t": 2026,
+          "value": 0.812568041824
+        },
+        {
+          "t": 2027,
+          "value": 0.915039853165
+        },
+        {
+          "t": 2028,
+          "value": 0.868106390147
+        },
+        {
+          "t": 2029,
+          "value": 0.445064521401
+        },
+        {
+          "t": 2030,
+          "value": 0.603798509254
+        },
+        {
+          "t": 2031,
+          "value": 0.811336399593
+        },
+        {
+          "t": 2032,
+          "value": 0.86023749874
+        },
+        {
+          "t": 2033,
+          "value": 0.735658548274
+        },
+        {
+          "t": 2034,
+          "value": 0.622412040793
+        },
+        {
+          "t": 2035,
+          "value": 1.054663456195
+        },
+        {
+          "t": 2036,
+          "value": 0.572080387606
+        },
+        {
+          "t": 2037,
+          "value": 0.788193246641
+        },
+        {
+          "t": 2038,
+          "value": 0.85823241198
+        },
+        {
+          "t": 2039,
+          "value": 0.507097578631
+        },
+        {
+          "t": 2040,
+          "value": 0.649277853051
+        },
+        {
+          "t": 2041,
+          "value": 0.5888710419
+        },
+        {
+          "t": 2042,
+          "value": 0.9355753869
+        },
+        {
+          "t": 2043,
+          "value": 1.143873389974
+        },
+        {
+          "t": 2044,
+          "value": 0.749354126586
+        },
+        {
+          "t": 2045,
+          "value": 0.562967025774
+        },
+        {
+          "t": 2046,
+          "value": 0.694506514812
+        },
+        {
+          "t": 2047,
+          "value": 0.595114973407
+        },
+        {
+          "t": 2048,
+          "value": 0.570747482825
+        },
+        {
+          "t": 2049,
+          "value": 0.687087644286
+        },
+        {
+          "t": 2050,
+          "value": 0.446829804273
+        },
+        {
+          "t": 2051,
+          "value": 0.469758769963
+        },
+        {
+          "t": 2052,
+          "value": 0.831868389209
+        },
+        {
+          "t": 2053,
+          "value": 0.615004861645
+        },
+        {
+          "t": 2054,
+          "value": 1.114649194077
+        },
+        {
+          "t": 2055,
+          "value": 0.847802068512
+        },
+        {
+          "t": 2056,
+          "value": 1.12261427174
+        },
+        {
+          "t": 2057,
+          "value": 0.925832774835
+        },
+        {
+          "t": 2058,
+          "value": 0.65813224986
+        },
+        {
+          "t": 2059,
+          "value": 0.716881768823
+        },
+        {
+          "t": 2060,
+          "value": 0.571645836249
+        },
+        {
+          "t": 2061,
+          "value": 0.792899110397
+        },
+        {
+          "t": 2062,
+          "value": 0.817412245473
+        },
+        {
+          "t": 2063,
+          "value": 0.489424636912
+        },
+        {
+          "t": 2064,
+          "value": 0.84045076875
+        },
+        {
+          "t": 2065,
+          "value": 0.721654614959
+        },
+        {
+          "t": 2066,
+          "value": 0.798788566721
+        },
+        {
+          "t": 2067,
+          "value": 1.181225097463
+        },
+        {
+          "t": 2068,
+          "value": 0.672774100305
+        },
+        {
+          "t": 2069,
+          "value": 0.980745003885
+        },
+        {
+          "t": 2070,
+          "value": 0.690127345894
+        },
+        {
+          "t": 2071,
+          "value": 0.750244678487
+        },
+        {
+          "t": 2072,
+          "value": 0.520387585463
+        },
+        {
+          "t": 2073,
+          "value": 0.918496588095
+        },
+        {
+          "t": 2074,
+          "value": 0.796356570301
+        },
+        {
+          "t": 2075,
+          "value": 0.779207365836
+        },
+        {
+          "t": 2076,
+          "value": 0.607771341763
+        },
+        {
+          "t": 2077,
+          "value": 1.355644224707
+        },
+        {
+          "t": 2078,
+          "value": 1.050262340184
+        },
+        {
+          "t": 2079,
+          "value": 0.758878154785
+        },
+        {
+          "t": 2080,
+          "value": 0.63160082617
+        },
+        {
+          "t": 2081,
+          "value": 0.823538849431
+        },
+        {
+          "t": 2082,
+          "value": 1.177030838152
+        },
+        {
+          "t": 2083,
+          "value": 0.88603538476
+        },
+        {
+          "t": 2084,
+          "value": 0.905045773946
+        },
+        {
+          "t": 2085,
+          "value": 0.950162722352
+        },
+        {
+          "t": 2086,
+          "value": 0.766051400679
+        },
+        {
+          "t": 2087,
+          "value": 0.889241931118
+        },
+        {
+          "t": 2088,
+          "value": 0.857948231473
+        },
+        {
+          "t": 2089,
+          "value": 0.85952658257
+        },
+        {
+          "t": 2090,
+          "value": 0.771823634142
+        },
+        {
+          "t": 2091,
+          "value": 0.454008548855
+        },
+        {
+          "t": 2092,
+          "value": 0.866568705876
+        },
+        {
+          "t": 2093,
+          "value": 0.658704125382
+        },
+        {
+          "t": 2094,
+          "value": 0.862373359821
+        },
+        {
+          "t": 2095,
+          "value": 0.865125551529
+        },
+        {
+          "t": 2096,
+          "value": 0.512037907112
+        },
+        {
+          "t": 2097,
+          "value": 1.016170734361
+        },
+        {
+          "t": 2098,
+          "value": 0.634607992155
+        },
+        {
+          "t": 2099,
+          "value": 0.470932693616
+        }
+      ],
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average daily precipitation at Elephant Butte Reservoir per year.",
+          "paramLabel": "Average Precipitation at Elephant Butte Reservoir",
+          "paramUnit": "mm/day"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Precipitación promedio diaria en la presa del Elefante Butte por año.",
+          "paramLabel": "Precipitación Promedio en la Presa del Elefante Butte",
+          "paramUnit": "mm/día"
+        }
+      ],
+      "structDimension": "1",
+      "structType": "table"
+    },
+    {
+      "dataType": "double",
+      "definitionType": "user",
+      "maxValue": 100,
+      "minValue": 0,
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "paramBenchMarks": [],
+      "paramDefaultSource": "",
+      "paramDefaultValue": [
+        {
+          "t": 1950,
+          "value": 11.877921427368
+        },
+        {
+          "t": 1951,
+          "value": 11.281896458349
+        },
+        {
+          "t": 1952,
+          "value": 12.41415197531
+        },
+        {
+          "t": 1953,
+          "value": 12.071627039804
+        },
+        {
+          "t": 1954,
+          "value": 12.029734054759
+        },
+        {
+          "t": 1955,
+          "value": 11.814099679808
+        },
+        {
+          "t": 1956,
+          "value": 11.437888980057
+        },
+        {
+          "t": 1957,
+          "value": 11.180073874276
+        },
+        {
+          "t": 1958,
+          "value": 12.16613889206
+        },
+        {
+          "t": 1959,
+          "value": 11.612020470127
+        },
+        {
+          "t": 1960,
+          "value": 11.663417739626
+        },
+        {
+          "t": 1961,
+          "value": 11.643807010663
+        },
+        {
+          "t": 1962,
+          "value": 11.543983726224
+        },
+        {
+          "t": 1963,
+          "value": 11.836780469967
+        },
+        {
+          "t": 1964,
+          "value": 12.269195212701
+        },
+        {
+          "t": 1965,
+          "value": 11.36676315917
+        },
+        {
+          "t": 1966,
+          "value": 11.789906169522
+        },
+        {
+          "t": 1967,
+          "value": 12.771773771063
+        },
+        {
+          "t": 1968,
+          "value": 10.83711347752
+        },
+        {
+          "t": 1969,
+          "value": 11.286127673217
+        },
+        {
+          "t": 1970,
+          "value": 11.493840243476
+        },
+        {
+          "t": 1971,
+          "value": 12.001660793413
+        },
+        {
+          "t": 1972,
+          "value": 12.416700898402
+        },
+        {
+          "t": 1973,
+          "value": 11.811725742322
+        },
+        {
+          "t": 1974,
+          "value": 12.059068488038
+        },
+        {
+          "t": 1975,
+          "value": 11.855737993681
+        },
+        {
+          "t": 1976,
+          "value": 11.103434732012
+        },
+        {
+          "t": 1977,
+          "value": 12.348379158857
+        },
+        {
+          "t": 1978,
+          "value": 11.363187591251
+        },
+        {
+          "t": 1979,
+          "value": 11.741214202516
+        },
+        {
+          "t": 1980,
+          "value": 12.256496138795
+        },
+        {
+          "t": 1981,
+          "value": 11.813488054606
+        },
+        {
+          "t": 1982,
+          "value": 11.539625211272
+        },
+        {
+          "t": 1983,
+          "value": 12.34127617906
+        },
+        {
+          "t": 1984,
+          "value": 11.782109365359
+        },
+        {
+          "t": 1985,
+          "value": 12.815120383503
+        },
+        {
+          "t": 1986,
+          "value": 12.053524812501
+        },
+        {
+          "t": 1987,
+          "value": 10.757521583271
+        },
+        {
+          "t": 1988,
+          "value": 11.155677827358
+        },
+        {
+          "t": 1989,
+          "value": 12.430284282779
+        },
+        {
+          "t": 1990,
+          "value": 12.385860249327
+        },
+        {
+          "t": 1991,
+          "value": 11.908673880002
+        },
+        {
+          "t": 1992,
+          "value": 12.172039086481
+        },
+        {
+          "t": 1993,
+          "value": 11.632646787994
+        },
+        {
+          "t": 1994,
+          "value": 12.202092620989
+        },
+        {
+          "t": 1995,
+          "value": 12.060092381445
+        },
+        {
+          "t": 1996,
+          "value": 12.062067696961
+        },
+        {
+          "t": 1997,
+          "value": 12.04170056576
+        },
+        {
+          "t": 1998,
+          "value": 12.307261136598
+        },
+        {
+          "t": 1999,
+          "value": 12.299133650743
+        },
+        {
+          "t": 2000,
+          "value": 11.908273172725
+        },
+        {
+          "t": 2001,
+          "value": 12.228071868417
+        },
+        {
+          "t": 2002,
+          "value": 13.015536870177
+        },
+        {
+          "t": 2003,
+          "value": 12.911331399983
+        },
+        {
+          "t": 2004,
+          "value": 11.75231078613
+        },
+        {
+          "t": 2005,
+          "value": 12.899819647223
+        },
+        {
+          "t": 2006,
+          "value": 12.231836251003
+        },
+        {
+          "t": 2007,
+          "value": 12.490204283048
+        },
+        {
+          "t": 2008,
+          "value": 13.317175590183
+        },
+        {
+          "t": 2009,
+          "value": 12.8308099883
+        },
+        {
+          "t": 2010,
+          "value": 13.121772921903
+        },
+        {
+          "t": 2011,
+          "value": 13.106710469145
+        },
+        {
+          "t": 2012,
+          "value": 13.882507359913
+        },
+        {
+          "t": 2013,
+          "value": 13.075365634652
+        },
+        {
+          "t": 2014,
+          "value": 12.110304163273
+        },
+        {
+          "t": 2015,
+          "value": 13.170403480837
+        },
+        {
+          "t": 2016,
+          "value": 13.629448319925
+        },
+        {
+          "t": 2017,
+          "value": 12.677997624194
+        },
+        {
+          "t": 2018,
+          "value": 13.168482337407
+        },
+        {
+          "t": 2019,
+          "value": 12.93113836587
+        },
+        {
+          "t": 2020,
+          "value": 14.351917587489
+        },
+        {
+          "t": 2021,
+          "value": 12.87844724939
+        },
+        {
+          "t": 2022,
+          "value": 13.497824304795
+        },
+        {
+          "t": 2023,
+          "value": 14.127594207865
+        },
+        {
+          "t": 2024,
+          "value": 13.807854891578
+        },
+        {
+          "t": 2025,
+          "value": 13.072464975143
+        },
+        {
+          "t": 2026,
+          "value": 13.896808182271
+        },
+        {
+          "t": 2027,
+          "value": 12.822321897655
+        },
+        {
+          "t": 2028,
+          "value": 13.273263120893
+        },
+        {
+          "t": 2029,
+          "value": 13.75065462516
+        },
+        {
+          "t": 2030,
+          "value": 13.455590526568
+        },
+        {
+          "t": 2031,
+          "value": 13.703100085708
+        },
+        {
+          "t": 2032,
+          "value": 13.449509882133
+        },
+        {
+          "t": 2033,
+          "value": 13.062734314065
+        },
+        {
+          "t": 2034,
+          "value": 14.337126165026
+        },
+        {
+          "t": 2035,
+          "value": 13.913996937004
+        },
+        {
+          "t": 2036,
+          "value": 14.487389199496
+        },
+        {
+          "t": 2037,
+          "value": 13.701021197201
+        },
+        {
+          "t": 2038,
+          "value": 13.008848494648
+        },
+        {
+          "t": 2039,
+          "value": 13.261753375404
+        },
+        {
+          "t": 2040,
+          "value": 13.054855593949
+        },
+        {
+          "t": 2041,
+          "value": 13.859835681106
+        },
+        {
+          "t": 2042,
+          "value": 13.630338145474
+        },
+        {
+          "t": 2043,
+          "value": 13.528161343896
+        },
+        {
+          "t": 2044,
+          "value": 13.960073301736
+        },
+        {
+          "t": 2045,
+          "value": 14.280528907596
+        },
+        {
+          "t": 2046,
+          "value": 13.479522864158
+        },
+        {
+          "t": 2047,
+          "value": 14.583165352383
+        },
+        {
+          "t": 2048,
+          "value": 14.528276853943
+        },
+        {
+          "t": 2049,
+          "value": 13.723482816513
+        },
+        {
+          "t": 2050,
+          "value": 14.938969575993
+        },
+        {
+          "t": 2051,
+          "value": 14.806589651356
+        },
+        {
+          "t": 2052,
+          "value": 14.498666708822
+        },
+        {
+          "t": 2053,
+          "value": 14.996998546388
+        },
+        {
+          "t": 2054,
+          "value": 13.951323904626
+        },
+        {
+          "t": 2055,
+          "value": 13.946410679601
+        },
+        {
+          "t": 2056,
+          "value": 13.506182926583
+        },
+        {
+          "t": 2057,
+          "value": 13.448042052858
+        },
+        {
+          "t": 2058,
+          "value": 14.423757655459
+        },
+        {
+          "t": 2059,
+          "value": 14.263095425399
+        },
+        {
+          "t": 2060,
+          "value": 15.497900173536
+        },
+        {
+          "t": 2061,
+          "value": 15.520355999769
+        },
+        {
+          "t": 2062,
+          "value": 14.93823315759
+        },
+        {
+          "t": 2063,
+          "value": 14.513784577759
+        },
+        {
+          "t": 2064,
+          "value": 14.390223905609
+        },
+        {
+          "t": 2065,
+          "value": 15.573931598
+        },
+        {
+          "t": 2066,
+          "value": 14.213025130404
+        },
+        {
+          "t": 2067,
+          "value": 14.390197443547
+        },
+        {
+          "t": 2068,
+          "value": 14.715902927992
+        },
+        {
+          "t": 2069,
+          "value": 15.594720812153
+        },
+        {
+          "t": 2070,
+          "value": 14.695189192739
+        },
+        {
+          "t": 2071,
+          "value": 14.393782707028
+        },
+        {
+          "t": 2072,
+          "value": 15.709616424761
+        },
+        {
+          "t": 2073,
+          "value": 14.830942443863
+        },
+        {
+          "t": 2074,
+          "value": 14.639032528259
+        },
+        {
+          "t": 2075,
+          "value": 14.944166663918
+        },
+        {
+          "t": 2076,
+          "value": 15.426400134954
+        },
+        {
+          "t": 2077,
+          "value": 15.003891178466
+        },
+        {
+          "t": 2078,
+          "value": 15.662468135663
+        },
+        {
+          "t": 2079,
+          "value": 15.109899372339
+        },
+        {
+          "t": 2080,
+          "value": 15.604878657093
+        },
+        {
+          "t": 2081,
+          "value": 14.639872585286
+        },
+        {
+          "t": 2082,
+          "value": 14.566560891545
+        },
+        {
+          "t": 2083,
+          "value": 16.240169433633
+        },
+        {
+          "t": 2084,
+          "value": 15.39761704325
+        },
+        {
+          "t": 2085,
+          "value": 14.287029418501
+        },
+        {
+          "t": 2086,
+          "value": 14.85268011086
+        },
+        {
+          "t": 2087,
+          "value": 14.615854378603
+        },
+        {
+          "t": 2088,
+          "value": 15.259461503964
+        },
+        {
+          "t": 2089,
+          "value": 14.864891490253
+        },
+        {
+          "t": 2090,
+          "value": 14.956111656436
+        },
+        {
+          "t": 2091,
+          "value": 15.810189198067
+        },
+        {
+          "t": 2092,
+          "value": 15.032610130813
+        },
+        {
+          "t": 2093,
+          "value": 15.655347984398
+        },
+        {
+          "t": 2094,
+          "value": 15.243018855952
+        },
+        {
+          "t": 2095,
+          "value": 14.880915235098
+        },
+        {
+          "t": 2096,
+          "value": 15.075915040624
+        },
+        {
+          "t": 2097,
+          "value": 14.954274710988
+        },
+        {
+          "t": 2098,
+          "value": 15.083454201913
+        },
+        {
+          "t": 2099,
+          "value": 16.072673118168
+        }
+      ],
+      "paramName": "EBTasV2_degC",
+      "paramValue": [
+        {
+          "t": 1950,
+          "value": 11.877921427368
+        },
+        {
+          "t": 1951,
+          "value": 11.281896458349
+        },
+        {
+          "t": 1952,
+          "value": 12.41415197531
+        },
+        {
+          "t": 1953,
+          "value": 12.071627039804
+        },
+        {
+          "t": 1954,
+          "value": 12.029734054759
+        },
+        {
+          "t": 1955,
+          "value": 11.814099679808
+        },
+        {
+          "t": 1956,
+          "value": 11.437888980057
+        },
+        {
+          "t": 1957,
+          "value": 11.180073874276
+        },
+        {
+          "t": 1958,
+          "value": 12.16613889206
+        },
+        {
+          "t": 1959,
+          "value": 11.612020470127
+        },
+        {
+          "t": 1960,
+          "value": 11.663417739626
+        },
+        {
+          "t": 1961,
+          "value": 11.643807010663
+        },
+        {
+          "t": 1962,
+          "value": 11.543983726224
+        },
+        {
+          "t": 1963,
+          "value": 11.836780469967
+        },
+        {
+          "t": 1964,
+          "value": 12.269195212701
+        },
+        {
+          "t": 1965,
+          "value": 11.36676315917
+        },
+        {
+          "t": 1966,
+          "value": 11.789906169522
+        },
+        {
+          "t": 1967,
+          "value": 12.771773771063
+        },
+        {
+          "t": 1968,
+          "value": 10.83711347752
+        },
+        {
+          "t": 1969,
+          "value": 11.286127673217
+        },
+        {
+          "t": 1970,
+          "value": 11.493840243476
+        },
+        {
+          "t": 1971,
+          "value": 12.001660793413
+        },
+        {
+          "t": 1972,
+          "value": 12.416700898402
+        },
+        {
+          "t": 1973,
+          "value": 11.811725742322
+        },
+        {
+          "t": 1974,
+          "value": 12.059068488038
+        },
+        {
+          "t": 1975,
+          "value": 11.855737993681
+        },
+        {
+          "t": 1976,
+          "value": 11.103434732012
+        },
+        {
+          "t": 1977,
+          "value": 12.348379158857
+        },
+        {
+          "t": 1978,
+          "value": 11.363187591251
+        },
+        {
+          "t": 1979,
+          "value": 11.741214202516
+        },
+        {
+          "t": 1980,
+          "value": 12.256496138795
+        },
+        {
+          "t": 1981,
+          "value": 11.813488054606
+        },
+        {
+          "t": 1982,
+          "value": 11.539625211272
+        },
+        {
+          "t": 1983,
+          "value": 12.34127617906
+        },
+        {
+          "t": 1984,
+          "value": 11.782109365359
+        },
+        {
+          "t": 1985,
+          "value": 12.815120383503
+        },
+        {
+          "t": 1986,
+          "value": 12.053524812501
+        },
+        {
+          "t": 1987,
+          "value": 10.757521583271
+        },
+        {
+          "t": 1988,
+          "value": 11.155677827358
+        },
+        {
+          "t": 1989,
+          "value": 12.430284282779
+        },
+        {
+          "t": 1990,
+          "value": 12.385860249327
+        },
+        {
+          "t": 1991,
+          "value": 11.908673880002
+        },
+        {
+          "t": 1992,
+          "value": 12.172039086481
+        },
+        {
+          "t": 1993,
+          "value": 11.632646787994
+        },
+        {
+          "t": 1994,
+          "value": 12.202092620989
+        },
+        {
+          "t": 1995,
+          "value": 12.060092381445
+        },
+        {
+          "t": 1996,
+          "value": 12.062067696961
+        },
+        {
+          "t": 1997,
+          "value": 12.04170056576
+        },
+        {
+          "t": 1998,
+          "value": 12.307261136598
+        },
+        {
+          "t": 1999,
+          "value": 12.299133650743
+        },
+        {
+          "t": 2000,
+          "value": 11.908273172725
+        },
+        {
+          "t": 2001,
+          "value": 12.228071868417
+        },
+        {
+          "t": 2002,
+          "value": 13.015536870177
+        },
+        {
+          "t": 2003,
+          "value": 12.911331399983
+        },
+        {
+          "t": 2004,
+          "value": 11.75231078613
+        },
+        {
+          "t": 2005,
+          "value": 12.899819647223
+        },
+        {
+          "t": 2006,
+          "value": 12.231836251003
+        },
+        {
+          "t": 2007,
+          "value": 12.490204283048
+        },
+        {
+          "t": 2008,
+          "value": 13.317175590183
+        },
+        {
+          "t": 2009,
+          "value": 12.8308099883
+        },
+        {
+          "t": 2010,
+          "value": 13.121772921903
+        },
+        {
+          "t": 2011,
+          "value": 13.106710469145
+        },
+        {
+          "t": 2012,
+          "value": 13.882507359913
+        },
+        {
+          "t": 2013,
+          "value": 13.075365634652
+        },
+        {
+          "t": 2014,
+          "value": 12.110304163273
+        },
+        {
+          "t": 2015,
+          "value": 13.170403480837
+        },
+        {
+          "t": 2016,
+          "value": 13.629448319925
+        },
+        {
+          "t": 2017,
+          "value": 12.677997624194
+        },
+        {
+          "t": 2018,
+          "value": 13.168482337407
+        },
+        {
+          "t": 2019,
+          "value": 12.93113836587
+        },
+        {
+          "t": 2020,
+          "value": 14.351917587489
+        },
+        {
+          "t": 2021,
+          "value": 12.87844724939
+        },
+        {
+          "t": 2022,
+          "value": 13.497824304795
+        },
+        {
+          "t": 2023,
+          "value": 14.127594207865
+        },
+        {
+          "t": 2024,
+          "value": 13.807854891578
+        },
+        {
+          "t": 2025,
+          "value": 13.072464975143
+        },
+        {
+          "t": 2026,
+          "value": 13.896808182271
+        },
+        {
+          "t": 2027,
+          "value": 12.822321897655
+        },
+        {
+          "t": 2028,
+          "value": 13.273263120893
+        },
+        {
+          "t": 2029,
+          "value": 13.75065462516
+        },
+        {
+          "t": 2030,
+          "value": 13.455590526568
+        },
+        {
+          "t": 2031,
+          "value": 13.703100085708
+        },
+        {
+          "t": 2032,
+          "value": 13.449509882133
+        },
+        {
+          "t": 2033,
+          "value": 13.062734314065
+        },
+        {
+          "t": 2034,
+          "value": 14.337126165026
+        },
+        {
+          "t": 2035,
+          "value": 13.913996937004
+        },
+        {
+          "t": 2036,
+          "value": 14.487389199496
+        },
+        {
+          "t": 2037,
+          "value": 13.701021197201
+        },
+        {
+          "t": 2038,
+          "value": 13.008848494648
+        },
+        {
+          "t": 2039,
+          "value": 13.261753375404
+        },
+        {
+          "t": 2040,
+          "value": 13.054855593949
+        },
+        {
+          "t": 2041,
+          "value": 13.859835681106
+        },
+        {
+          "t": 2042,
+          "value": 13.630338145474
+        },
+        {
+          "t": 2043,
+          "value": 13.528161343896
+        },
+        {
+          "t": 2044,
+          "value": 13.960073301736
+        },
+        {
+          "t": 2045,
+          "value": 14.280528907596
+        },
+        {
+          "t": 2046,
+          "value": 13.479522864158
+        },
+        {
+          "t": 2047,
+          "value": 14.583165352383
+        },
+        {
+          "t": 2048,
+          "value": 14.528276853943
+        },
+        {
+          "t": 2049,
+          "value": 13.723482816513
+        },
+        {
+          "t": 2050,
+          "value": 14.938969575993
+        },
+        {
+          "t": 2051,
+          "value": 14.806589651356
+        },
+        {
+          "t": 2052,
+          "value": 14.498666708822
+        },
+        {
+          "t": 2053,
+          "value": 14.996998546388
+        },
+        {
+          "t": 2054,
+          "value": 13.951323904626
+        },
+        {
+          "t": 2055,
+          "value": 13.946410679601
+        },
+        {
+          "t": 2056,
+          "value": 13.506182926583
+        },
+        {
+          "t": 2057,
+          "value": 13.448042052858
+        },
+        {
+          "t": 2058,
+          "value": 14.423757655459
+        },
+        {
+          "t": 2059,
+          "value": 14.263095425399
+        },
+        {
+          "t": 2060,
+          "value": 15.497900173536
+        },
+        {
+          "t": 2061,
+          "value": 15.520355999769
+        },
+        {
+          "t": 2062,
+          "value": 14.93823315759
+        },
+        {
+          "t": 2063,
+          "value": 14.513784577759
+        },
+        {
+          "t": 2064,
+          "value": 14.390223905609
+        },
+        {
+          "t": 2065,
+          "value": 15.573931598
+        },
+        {
+          "t": 2066,
+          "value": 14.213025130404
+        },
+        {
+          "t": 2067,
+          "value": 14.390197443547
+        },
+        {
+          "t": 2068,
+          "value": 14.715902927992
+        },
+        {
+          "t": 2069,
+          "value": 15.594720812153
+        },
+        {
+          "t": 2070,
+          "value": 14.695189192739
+        },
+        {
+          "t": 2071,
+          "value": 14.393782707028
+        },
+        {
+          "t": 2072,
+          "value": 15.709616424761
+        },
+        {
+          "t": 2073,
+          "value": 14.830942443863
+        },
+        {
+          "t": 2074,
+          "value": 14.639032528259
+        },
+        {
+          "t": 2075,
+          "value": 14.944166663918
+        },
+        {
+          "t": 2076,
+          "value": 15.426400134954
+        },
+        {
+          "t": 2077,
+          "value": 15.003891178466
+        },
+        {
+          "t": 2078,
+          "value": 15.662468135663
+        },
+        {
+          "t": 2079,
+          "value": 15.109899372339
+        },
+        {
+          "t": 2080,
+          "value": 15.604878657093
+        },
+        {
+          "t": 2081,
+          "value": 14.639872585286
+        },
+        {
+          "t": 2082,
+          "value": 14.566560891545
+        },
+        {
+          "t": 2083,
+          "value": 16.240169433633
+        },
+        {
+          "t": 2084,
+          "value": 15.39761704325
+        },
+        {
+          "t": 2085,
+          "value": 14.287029418501
+        },
+        {
+          "t": 2086,
+          "value": 14.85268011086
+        },
+        {
+          "t": 2087,
+          "value": 14.615854378603
+        },
+        {
+          "t": 2088,
+          "value": 15.259461503964
+        },
+        {
+          "t": 2089,
+          "value": 14.864891490253
+        },
+        {
+          "t": 2090,
+          "value": 14.956111656436
+        },
+        {
+          "t": 2091,
+          "value": 15.810189198067
+        },
+        {
+          "t": 2092,
+          "value": 15.032610130813
+        },
+        {
+          "t": 2093,
+          "value": 15.655347984398
+        },
+        {
+          "t": 2094,
+          "value": 15.243018855952
+        },
+        {
+          "t": 2095,
+          "value": 14.880915235098
+        },
+        {
+          "t": 2096,
+          "value": 15.075915040624
+        },
+        {
+          "t": 2097,
+          "value": 14.954274710988
+        },
+        {
+          "t": 2098,
+          "value": 15.083454201913
+        },
+        {
+          "t": 2099,
+          "value": 16.072673118168
+        }
+      ],
+      "paraminfo": [
+        {
+          "lang": "en-us",
+          "paramCategory": "Climate",
+          "paramDescription": "Average annual temperature at Elephant Butte Reservoir.",
+          "paramLabel": "Average Temperature at Elephant Butte Reservoir",
+          "paramUnit": "Celsius"
+        },
+        {
+          "lang": "es-mx",
+          "paramCategory": "Clima",
+          "paramDescription": "Temperatura promedio anual en la presa del Elefante Butte.",
+          "paramLabel": "Temperatura Promedio en la Presa del Elefante Butte",
+          "paramUnit": "Centigrados"
+        }
+      ],
+      "structDimension": "1",
+      "structType": "table"
+    }
+  ],
+  "modelOutputs": [
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [
+        {
+          "benchmarkDescription": "Calendar year average storage volume at Elephant Butte Reservoir from 1964 to 2013 in acre-feet",
+          "benchmarkLabel": "Elephant Butte Storage Calendar Year Average (1964-2013)",
+          "benchmarkLang": "en-us",
+          "benchmarkSource": "D.Gutzler (UNM)",
+          "benchmarkValue": 874570
+        },
+        {
+          "benchmarkDescription": "Maximum storage volume capacity at Elephant Butte Reservoir in acre-feet",
+          "benchmarkLabel": "Storage Capacity",
+          "benchmarkLang": "en-us",
+          "benchmarkSource": "https://en.wikipedia.org/wiki/Elephant_Butte_Reservoir",
+          "benchmarkValue": 1990000
+        },
+        {
+          "benchmarkDescription": "Volumen de agua máximo que puede ser almacenado en la presa del Elefante Butte dado en acre-pies",
+          "benchmarkLabel": "Capacidad de Almacenamiento",
+          "benchmarkLang": "es-mx",
+          "benchmarkSource": "https://en.wikipedia.org/wiki/Elephant_Butte_Reservoir",
+          "benchmarkValue": 1990000
+        },
+        {
+          "benchmarkDescription": "Promedio en el volumen de agua almacenada en la presa del Elefante Butte durante periodos anuales desde 1964 a 2013 dado en acre-pies",
+          "benchmarkLabel": "Promedio de Agua Almacenada (1964-2013)",
+          "benchmarkLang": "es-mx",
+          "benchmarkSource": "D.Gutzler (UNM)",
+          "benchmarkValue": 874570
+        }
+      ],
+      "varName": "EBStorageV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Elephant Butte reservoir storage volume at end of year",
+          "varLabel": "Elephant Butte Reservoir Storage",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Promedio anual en el volumen de almacenamiento al final del año en la Presa del Elefante Butte",
+          "varLabel": "Almacenamiento en Presa del Elefante Butte",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "EBSurfAV2_ac",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Superficial surface area covered with water at Elephant Butte Reservoir",
+          "varLabel": "Elephant Butte Lake Surface Area",
+          "varUnit": "Acres"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Área superficial cubierta por agua en la presa del Elefante Butte",
+          "varLabel": "Área Superficial de la presa del Elefante Butte",
+          "varUnit": "Acres"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "CabStorageV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Average volume of water stored at Caballo Reservoir by year",
+          "varLabel": "Caballo Reservoir Storage",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Volumen de agua promedio almacenado en la Presa de El Caballo por año",
+          "varLabel": "Almacenamiento en Presa El Caballo",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "CabSurfAV2_ac",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Superficial surface area covered with water at El Caballo Reservoir",
+          "varLabel": "Caballo Lake Surface Area",
+          "varUnit": "Acres"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Área superficial cubierta por agua en la presa de El Caballo",
+          "varLabel": "Area Superficial en Presa El Caballo",
+          "varUnit": "Acres"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "ResSEvapV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Climate",
+          "varDescription": "Water loss due to evaporation from open water surface storage locations which includes Elephant Butte and Caballo reservoirs",
+          "varLabel": "Rio Grande Project Storage Evaporation",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Clima",
+          "varDescription": "Pérdidas de agua debido a la evaporación de masas abiertas de agua almacenadas en reservas superficiales las cuales incluyen la presa del Elefante Butte y del Caballo",
+          "varLabel": "Evaporación en Reservas del Proyecto del Rio Bravo",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "ResSPrecipV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Climate",
+          "varDescription": "Average local precipitation at storage locations which includes Elephant Butte and Caballo reservoirs",
+          "varLabel": "Rio Grande Project Storage Precipitation",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Clima",
+          "varDescription": "Precipitación promedio en reservas superficiales las cuales incluyen la presa del Elefante Butte y del Caballo",
+          "varLabel": "Precipitación en Reservas del Proyecto del Rio Bravo",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "ExcessV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Yearly excess of water spilled from Elephant Butte Reservoir",
+          "varLabel": "Water Excess from Elephant Butte Reservoir",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Exceso anual de agua derramado de la Presa del Elefante Butte",
+          "varLabel": "Exceso de agua en la Presa del Elefante Butte",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "CabROV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Basin runoff to Caballo Reservoir",
+          "varLabel": "Caballo Basin Runoff",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Escurrimientos locales hacia la presa de El Caballo",
+          "varLabel": "Escurrimientos en la Cuenca de El Caballo",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "CabReleaseV2_af",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual surface water volume released for regional consumption from Caballo  Reservoir located upstream of the city of Las Cruces and the Elephant Butte irrigation district, release volumes are directed by the 2008 Rio Grande Project Operating Agreement",
+          "varLabel": "Caballo Reservoir Releases",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Volumen anual de agua superficial extraída para consumo regional desde la presa del Caballo ubicada rio arriba de la ciudad de Las Cruces y el distrito de irrigación de Elefante Butte, los volúmenes de extracción conforme al Acuerdo de Operacion del Proyecto del Rio Bravo del 2008",
+          "varLabel": "Salidas de Caballo",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "SWEvapV2_ft",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Climate",
+          "varDescription": "Depth of water loss due to evaporation from open water surface storage locations which includes Elephant Butte and Caballo reservoirs",
+          "varLabel": "Surface Water Evaporation Depth",
+          "varUnit": "Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Clima",
+          "varDescription": "Profundidad por pérdidas de agua debido a la evaporación de masas abiertas de agua almacenadas en reservas superficiales las cuales incluyen la presa del Elefante Butte y del Caballo",
+          "varLabel": "Profundidad de Evaporación de Agua Superficial",
+          "varUnit": "Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "NetLocalV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Net local reservoir flows derived from Precipitation + Runoff - Evaporation",
+          "varLabel": "Net Local Reservoir Flows",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Flujos de agua locales netos procedentes de Precipitacion + Escurrimientos - Evaporación",
+          "varLabel": "Flujos Locales Netos",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "LocalNetDepthV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Net local reservoir depth derived from Precipitation + Runoff - Evaporation",
+          "varLabel": "Net Local Depth",
+          "varUnit": "Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Profundidad local neta procedente de Precipitacion + Escurrimientos - Evaporación",
+          "varLabel": "Profundidad Local Neta",
+          "varUnit": "Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "FullAllocationV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Allocation",
+          "varDescription": "Full allocation from Caballo Reservor to downstream users according to the 2008 Rio Grande Project Operating Agreement",
+          "varLabel": "Full Allocation",
+          "varUnit": "Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Reparto",
+          "varDescription": "Asignación completa de agua de la presa El Caballo a los usuarios rio abajo conforme al Acuerdo de Operación del Proyecto del Rio Bravo del 2008",
+          "varLabel": "Asignación completa",
+          "varUnit": "Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MAACumLossV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Total consumptive water use from the Mesilla shallow depth aquifer from both urban and agricultural sectors",
+          "varLabel": "Mesilla Alluvial Total Cumulative Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Consumo total de agua proveniente del acuífero de la Mesilla poco profundo para uso urbano y agrícola",
+          "varLabel": "Mesilla Aluvial Pérdida total acumulativa",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MAAAgV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Allocation",
+          "varDescription": "Annual consumptive use of water from the Mesilla shallow depth aquifer for agricultural use",
+          "varLabel": "Mesilla Alluvial Cumulative loss from Agriculture",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Reparto",
+          "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla poco profundo para uso agrícola",
+          "varLabel": "Pérdida Cumulativa de Mesilla Aluvial por sector Agricola",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MAARechargeV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual water recharge to the Mesilla shallow depth aquifer",
+          "varLabel": "Mesilla Alluvial Cumulative Recharge",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Recarga anual de agua al acuífero de la Mesilla a niveles de poca profundidad",
+          "varLabel": "Recarga acumulativa en Mesilla Aluvial",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MIDACumLossV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Storage",
+          "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer from both urban and agricultural sectors",
+          "varLabel": "Mesilla Intermediate Total Cumulative Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Almacenamiento",
+          "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso urbano y agrícola",
+          "varLabel": "Pérdida Total Acumulativa en Mesilla Intermedio",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MIDAUrbanV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Allocation",
+          "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer for urban use",
+          "varLabel": "Mesilla Intermediate Cumulative Urban Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Reparto",
+          "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso urbano",
+          "varLabel": "Pérdida Urbana Acumulativa en la Mesilla Intermedio",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MIDAAgV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Allocation",
+          "varDescription": "Annual consumptive use of water from the Mesilla intermediate and deep aquifer for agricultural use",
+          "varLabel": "Mesilla Intermediate Cumulative Agricultural Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Reparto",
+          "varDescription": "Consumo anual de agua proveniente del acuífero de la Mesilla a nivel profundo e intermedio para uso agrícola",
+          "varLabel": "Pérdida Agrícola Acumulativa en la Mesilla Intermedia",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "MIDARechargeV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual water recharge to the Mesilla intermediate and deep depth aquifer",
+          "varLabel": "Mesilla Intermediate Cumulative Recharge",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Recarga anual de agua al acuífero de la Mesilla a nivel profundo e intermedio",
+          "varLabel": "Recarga Acumulativa en la Mesilla Intermedia",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "HBCumLossV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Total consumptive water use from the Hueco Bolson aquifer from both urban and agricultural sectors",
+          "varLabel": "Hueco Bolson Total Cumulative Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Consumo anual de agua proveniente del Bolsón del hueco para uso urbano y agricola",
+          "varLabel": "Perdida Total Cumulativa en el Bolson del Hueco",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "HBAgCumV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual consumptive use of water from the Hueco Bolson aquifer for agricultural use",
+          "varLabel": "Hueco Bolson Agricultural Cumulative Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Consumo anual de agua proveniente del Bolsón del Hueco para uso agrícola ",
+          "varLabel": "Pérdida Agrícola Acumulativa del Bolson del Hueco",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "HBRechargeCumV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual  water recharge to the Hueco Bolson",
+          "varLabel": "Hueco Bolson Cumulative Recharge",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Recarga anual de agua al Bolsón del Hueco",
+          "varLabel": "Recarga Acumulativa en el Bolson del Hueco",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    },
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242",
+      "varBenchMarks": [],
+      "varName": "HBUrbanCumV2",
+      "varinfo": [
+        {
+          "lang": "en-us",
+          "varCategory": "Flows",
+          "varDescription": "Annual consumptive use of water from the Hueco Bolson aquifer  for urban use",
+          "varLabel": "Hueco Bolson Urban Cumulative Loss",
+          "varUnit": "Thousands of Acre-Feet"
+        },
+        {
+          "lang": "es-mx",
+          "varCategory": "Flujos",
+          "varDescription": "Consumo anual de agua proveniente del Bolsón del Hueco para uso urbano",
+          "varLabel": "Perdida Cumulativa en el Bolson del Hueco por uso Urbano",
+          "varUnit": "Miles de Acre-Pies"
+        }
+      ]
+    }
+  ],
+  "modelSets": [],
+  "modelSettings": [
+    {
+      "modelID": "7b7ac93638f711ec8d3d0242"
+    }
+  ],
+  "name": "Custom workflow scenario bb350d6e-0464-4b18-a3e2-ea70f8b5030b",
+  "status": "ready"
+}

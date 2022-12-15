@@ -1,0 +1,39 @@
+{
+  "_id": "2a355435-c520-4a8e-8209-093ebe2d3f25",
+  "info": [
+    {
+      "name": "SWIM Scenario Assembler",
+      "description": "Assembles a SWIM scenario specification for scientific model consumption",
+      "lang": "en-us"
+    },
+    {
+      "name": "Ensamblador de Escenarios SWIM",
+      "description": "Ensambla una especificacion de escenario SWIM ha ser consumido por un modelo cientifico",
+      "lang": "es-mx"
+    }
+  ],
+  "dateCreated": "2021-11-19T15:39:00-07:00",
+  "dateModified": "2021-11-19T15:39:00-07:00",
+  "language": "Python 3.6",
+  "license": "Creative Commons Version 4.0",
+  "version": "1.0",
+  "creators": [
+    {
+      "name": "Luis A. Garnica Chavira",
+      "department": "CyberShare",
+      "email": "lagarnicachavira@utep.edu",
+      "organization": "University of Texas at El Paso",
+      "city": "El Paso",
+      "state": "Texas",
+      "country": "United States of America"
+    }
+  ],
+  "serviceInfo": {
+    "serviceURL": "https://services.cybershare.utep.edu/swim-transformer/assemblescenario/",
+    "serviceMethod": "POST",
+    "status": "online",
+    "consumes": "application/json",
+    "produces": "application/json",
+    "isPublic": true
+  }
+}

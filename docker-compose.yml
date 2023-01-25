@@ -2,7 +2,7 @@ version: '3.8'
 services:
   swim-broker: 
     container_name: swim-broker
-    image: lagarnicachavira/swim-broker:latest
+    image: lagarnicachavira/swim-broker-public:latest
     restart: always
     environment:
       - SWIMDBUSER=user

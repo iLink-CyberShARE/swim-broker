@@ -47,12 +47,12 @@ This material is based upon work supported by the National Science Foundation (N
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation. 
 
 ## Contributors
-Lead Developer - Luis A. Garnica
-Developer - Raul Alejandro Vargas Acosta
+Luis A. Garnica Chavira
+Raul Alejandro Vargas Acosta
 
 ## License
-GNU General Public License 3.0
+This software code is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](https://github.com/iLink-CyberShARE/SWIM-IT/blob/master/LICENSE) and uses third party libraries that are distributed under their own terms (see [LICENSE-3RD-PARTY.md](./LICENSE-3RD-PARTY.md)).
 
 ## Copyright   
-© 2022 - University of Texas at El Paso (SWIM Project).   
+© 2015-2023 University of Texas at El Paso (SWIM Project)  
 
